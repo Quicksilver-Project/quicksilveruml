@@ -58,6 +58,7 @@
  * 
  * The sources and targets of the information flow must conform to the sources and targets or conversely the
  * targets and sources of the realization relationships.
+ * 
  * Cannot be expressed in OCL
  * 
  *  sources_and_targets_kind
@@ -65,6 +66,7 @@
  * The sources and targets of the information flow can only be one of the following kind: Actor, Node, UseCase,
  * Artifact, Class, Component, Port, Property, Interface, Package, ActivityNode, ActivityPartition, Behavior and
  * InstanceSpecification except when its classifier is a relationship (i.e. it represents a link).
+ * 
  * inv: (self.informationSource->forAll( sis |
  * oclIsKindOf(Actor) or oclIsKindOf(Node) or oclIsKindOf(UseCase) or oclIsKindOf(Artifact)
  * or
@@ -88,6 +90,7 @@
  *  convey_classifiers
  * 
  * An information flow can only convey classifiers that are allowed to represent an information item.
+ * 
  * inv: self.conveyed->forAll(oclIsKindOf(Class) or oclIsKindOf(Interface)
  * or oclIsKindOf(InformationItem) or oclIsKindOf(Signal) or oclIsKindOf(Component))
 **/

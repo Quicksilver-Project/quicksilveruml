@@ -54,30 +54,36 @@
  *  provided() : Interface [0..*]
  * 
  * Derivation for Component::/provided
+ * 
  * body: let ris : Set(Interface) = allRealizedInterfaces(),
  * realizingClassifiers : Set(Classifier) = self.realization.realizingClassifier-
  * >union(self.allParents()->collect(realization.realizingClassifier))->asSet(),
  * allRealizingClassifiers : Set(Classifier) = realizingClassifiers-
  * >union(realizingClassifiers.allParents())->asSet(),
  * realizingClassifierInterfaces : Set(Interface) = allRealizingClassifiers->iterate(c;
+ * 
  * rci : Set(Interface) = Set{} | rci->union(c.allRealizedInterfaces())),
  * ports : Set(Port) = self.ownedPort->union(allParents()->collect(ownedPort))-
  * >asSet(),
+ * 
  * providedByPorts : Set(Interface) = ports.provided->asSet()
  * in ris->union(realizingClassifierInterfaces) ->union(providedByPorts)->asSet()
  * 
  *  required() : Interface [0..*]
  * 
  * Derivation for Component::/required
+ * 
  * body: let uis : Set(Interface) = allUsedInterfaces(),
  * realizingClassifiers : Set(Classifier) = self.realization.realizingClassifier-
  * >union(self.allParents()->collect(realization.realizingClassifier))->asSet(),
  * allRealizingClassifiers : Set(Classifier) = realizingClassifiers-
  * >union(realizingClassifiers.allParents())->asSet(),
  * realizingClassifierInterfaces : Set(Interface) = allRealizingClassifiers->iterate(c;
+ * 
  * rci : Set(Interface) = Set{} | rci->union(c.allUsedInterfaces())),
  * ports : Set(Port) = self.ownedPort->union(allParents()->collect(ownedPort))-
  * >asSet(),
+ * 
  * usedByPorts : Set(Interface) = ports.required->asSet()
  * in uis->union(realizingClassifierInterfaces)->union(usedByPorts)->asSet()
  * 
@@ -86,10 +92,12 @@
  *  no_nested_classifiers
  * 
  * A Component cannot nest Classifiers.
+ * 
  * inv: nestedClassifier->isEmpty()
  * 
  *  no_packaged_elements
  * 
  * A Component nested in a Class cannot have any packaged elements.
+ * 
  * inv: nestingClass <> null implies packagedElement->isEmpty()
 **/

@@ -1,3 +1,6 @@
+#include "action.h"
+#include "activity_group.h"
+#include "namespace.h"
 /**~action~
  * A_edge_inStructuredNode [Association]
  * 
@@ -21,7 +24,8 @@
  * Owned Ends
  * 
  *  loopNode : LoopNode [0..1]{subsets
- * A_structuredNodeInput_structuredActivityNode::structuredActivityNode} (opposite
+ * A_structuredNodeInput_structuredActivityNode
+ * ::structuredActivityNode} (opposite
  * LoopNode::loopVariableInput)
 **/
 /**
@@ -45,8 +49,11 @@
  * 
  * Owned Ends
  * 
- *  loopNode : LoopNode [0..1]{subsets
- * A_structuredNodeOutput_structuredActivityNode::structuredActivityNode} (opposite LoopNode::result)
+ *  loopNode : LoopNode [0..1]
+ * {subsets
+ * A_structuredNodeOutput_structuredActivityNode
+ * ::structuredActivityNode}
+ * (opposite LoopNode::result)
 **/
 /**
  * A_structuredNodeInput_structuredActivityNode [Association]
@@ -57,7 +64,9 @@
  * 
  * Owned Ends
  * 
- *  structuredActivityNode : StructuredActivityNode [0..1]{subsets A_input_action::action} (opposite
+ *  structuredActivityNode : StructuredActivityNode
+ * [0..1]{subsets A_input_action::action}
+ * (opposite
  * StructuredActivityNode::structuredNodeInput)
 **/
 /**
@@ -69,7 +78,9 @@
  * 
  * Owned Ends
  * 
- *  structuredActivityNode : StructuredActivityNode [0..1]{subsets A_output_action::action} (opposite
+ *  structuredActivityNode : StructuredActivityNode
+ * [0..1]{subsets A_output_action::action}
+ * (opposite
  * StructuredActivityNode::structuredNodeOutput)
 **/
 /**

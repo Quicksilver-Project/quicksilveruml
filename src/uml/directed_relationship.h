@@ -1,3 +1,5 @@
+#include "relationship.h"
+
 /**~common structure~
  * A_informationTarget_informationFlow [Association]
  * 

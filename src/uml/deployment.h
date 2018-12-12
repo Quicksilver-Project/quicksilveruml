@@ -1,3 +1,5 @@
+#include "dependency.h"
+
 /**~deployment~
  * A_configuration_deployment [Association]
  * 

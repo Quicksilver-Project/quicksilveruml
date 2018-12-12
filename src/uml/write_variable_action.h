@@ -1,3 +1,4 @@
+#include "variable_action.h"
 /**~action~
  * A_value_writeVariableAction [Association]
  * 
@@ -7,6 +8,8 @@
  * 
  * Owned Ends
  * 
- *  writeVariableAction : WriteVariableAction [0..1]{subsets A_input_action::action} (opposite
+ *  writeVariableAction : WriteVariableAction
+ * [0..1]{subsets A_input_action::action}
+ * (opposite
  * WriteVariableAction::value)
 **/

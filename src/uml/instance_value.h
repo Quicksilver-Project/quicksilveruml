@@ -1,3 +1,5 @@
+#include "value_specification.h"
+
 /**~classification~
  * A_instance_instanceValue [Association]
  * 

@@ -47,8 +47,8 @@
  * The specification of the lower bound for this multiplicity.
  * 
  *  ♦ upperValue : ValueSpecification [0..1]{subsets Element::ownedElement} (opposite
- * 
  * A_upperValue_owningUpper::owningUpper)
+ * 
  * The specification of the upper bound for this multiplicity.
  * 
  * Operations
@@ -57,6 +57,7 @@
  * 
  * The operation compatibleWith takes another multiplicity as input. It returns true if the other multiplicity is
  * wider than, or the same as, self.
+ * 
  * body: (other.lowerBound() <= self.lowerBound()) and ((other.upperBound() = *) or
  * (self.upperBound() <= other.upperBound()))
  * 

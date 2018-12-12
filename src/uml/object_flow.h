@@ -1,3 +1,4 @@
+#include "activity_edge.h"
 /**~activity~ 
  * A_selection_objectFlow [Association]
  * 

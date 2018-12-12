@@ -1,3 +1,4 @@
+#include "link_end_data.h"
 /**~action~
  * A_insertAt_linkEndCreationData [Association]
  * 

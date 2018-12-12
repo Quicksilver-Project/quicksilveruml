@@ -1,3 +1,5 @@
+#include "redefinable_element.h"
+#include "template_signature.h"
 /**~classification~
  * A_extendedSignature_redefinableTemplateSignature [Association]
  * 
@@ -34,7 +36,6 @@
  * Member Ends
  * 
  *  Classifier::ownedTemplateSignature
- * 
  *  RedefinableTemplateSignature::classifier
 **/
 /**
@@ -47,7 +48,6 @@
  * Member Ends
  * 
  *  Classifier::ownedTemplateSignature
- * 
  *  RedefinableTemplateSignature::classifier
 **/
 /**

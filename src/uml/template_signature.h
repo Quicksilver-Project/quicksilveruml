@@ -1,3 +1,4 @@
+#include "element.h"
 /**~common structure~
  * A_ownedParameter_signature [Association]
  * 
@@ -8,7 +9,6 @@
  * Member Ends
  * 
  *  TemplateSignature::ownedParameter
- * 
  *  TemplateParameter::signature
 **/
 /**
@@ -21,7 +21,6 @@
  * Member Ends
  * 
  *  TemplateableElement::ownedTemplateSignature
- * 
  *  TemplateSignature::template
 **/
 /**
@@ -32,6 +31,6 @@
  * Templates
  * 
  * Owned Ends
- * 
- *  templateSignature : TemplateSignature [0..*] (opposite TemplateSignature::parameter)
+ *  templateSignature : TemplateSignature
+ * [0..*] (opposite TemplateSignature::parameter)
 **/

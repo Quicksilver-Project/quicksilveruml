@@ -1,3 +1,4 @@
+#include "action.h"
 /**~action~
  * A_first_testIdentityAction [Association]
  * 
@@ -7,7 +8,8 @@
  * 
  * Owned Ends
  * 
- *  testIdentityAction : TestIdentityAction [0..1]{subsets A_input_action::action} (opposite
+ *  testIdentityAction : TestIdentityAction [0..1]
+ * {subsets A_input_action::action} (opposite
  * TestIdentityAction::first)
 **/
 /**
@@ -19,7 +21,8 @@
  * 
  * Owned Ends
  * 
- *  testIdentityAction : TestIdentityAction [0..1]{subsets A_output_action::action} (opposite
+ *  testIdentityAction : TestIdentityAction
+ * [0..1]{subsets A_output_action::action} (opposite
  * TestIdentityAction::result)
 **/
 /**
@@ -31,6 +34,7 @@
  * 
  * Owned Ends
  * 
- *  testIdentityAction : TestIdentityAction [0..1]{subsets A_input_action::action} (opposite
+ *  testIdentityAction : TestIdentityAction 
+ * [0..1]{subsets A_input_action::action} (opposite
  * TestIdentityAction::second)
 **/

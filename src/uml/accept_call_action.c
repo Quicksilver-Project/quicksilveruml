@@ -1,5 +1,3 @@
-
-
 /**~action~
  * AcceptCallAction [Class]
  * 

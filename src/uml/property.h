@@ -1,3 +1,6 @@
+#include "connectable_element.h"
+#include "deployment_target.h"
+#include "structural_feature.h"
 /**~classification~
  * A_opposite_property [Association]
  * 
@@ -19,7 +22,6 @@
  * Member Ends
  * 
  *  Property::qualifier
- * 
  *  Property::associationEnd
 **/
 /**
@@ -65,7 +67,6 @@
  * Member Ends
  * 
  *  Association::ownedEnd
- * 
  *  Property::owningAssociation
 **/
 /**
@@ -78,7 +79,6 @@
  * Member Ends
  * 
  *  Class::ownedAttribute
- * 
  *  Property::class
 **/
 /**
@@ -91,7 +91,6 @@
  * Member Ends
  * 
  *  Association::memberEnd
- * 
  *  Property::association
 **/
 /**
@@ -104,7 +103,6 @@
  * Member Ends
  * 
  *  Interface::ownedAttribute
- * 
  *  Property::interface
 **/
 /**
@@ -117,7 +115,6 @@
  * Member Ends
  * 
  *  DataType::ownedAttribute
- * 
  *  Property::datatype
 **/
 /**
@@ -153,7 +150,6 @@
  * Member Ends
  * 
  *  Property::qualifier
- * 
  *  Property::associationEnd
 **/
 /**

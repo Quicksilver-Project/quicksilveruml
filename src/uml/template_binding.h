@@ -1,3 +1,4 @@
+#include "directed_relationship.h"
 /**~common structure~
  * 
  * A_parameterSubstitution_templateBinding [Association]
@@ -9,7 +10,6 @@
  * Member Ends
  * 
  *  TemplateBinding::parameterSubstitution
- * 
  *  TemplateParameterSubstitution::templateBinding
 **/
 /**
@@ -21,7 +21,9 @@
  * 
  * Owned Ends
  * 
- *  templateBinding : TemplateBinding [0..*]{subsets A_target_directedRelationship::directedRelationship}
+ *  templateBinding : TemplateBinding
+ * [0..*]{subsets A_target_directedRelationship
+ * ::directedRelationship}
  * (opposite TemplateBinding::signature)
 **/
 /**
@@ -34,6 +36,5 @@
  * Member Ends
  * 
  *  TemplateableElement::templateBinding
- * 
  *  TemplateBinding::boundElement
 **/

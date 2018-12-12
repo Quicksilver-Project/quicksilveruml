@@ -29,5 +29,6 @@
  *  ownedPort() : Port [0..*]{ordered}
  * 
  * Derivation for EncapsulatedClassifier::/ownedPort : Port
+ * 
  * body: ownedAttribute->select(oclIsKindOf(Port))->collect(oclAsType(Port))->asOrderedSet()
 **/

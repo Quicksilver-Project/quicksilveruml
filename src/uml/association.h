@@ -1,3 +1,6 @@
+#include "classifier.h"
+#include "relationship.h"
+
 /**~structured classifier~
  * A_ownedEnd_owningAssociation [Association]
  * 

@@ -42,6 +42,7 @@
  *  selector_specified
  * 
  * The selector for a Lifeline must only be specified if the referenced Part is multivalued.
+ * 
  * inv: self.selector->notEmpty() = (self.represents.oclIsKindOf(MultiplicityElement) and
  * self.represents.oclAsType(MultiplicityElement).isMultivalued())
  * 
@@ -51,6 +52,7 @@
  * common with another lifeline in an Interaction referred to by another InteractonUse within that same enclosing
  * Interaction, it must be common to a lifeline within that enclosing Interaction. By common Lifelines we mean
  * Lifelines with the same selector and represents associations.
+ * 
  * inv: let intUses : Set(InteractionUse) = interaction.interactionUse in
  * intUses->forAll
  * ( iuse : InteractionUse |
@@ -98,11 +100,13 @@
  * 
  * The classifier containing the referenced ConnectableElement must be the same classifier, or an ancestor, of the
  * classifier that contains the interaction enclosing this lifeline.
+ * 
  * inv: represents.namespace->closure(namespace)->includes(interaction._'context')
  * 
  *  selector_int_or_string
  * 
  * The selector value, if present, must be a LiteralString or a LiteralInteger.
+ * 
  * inv: self.selector->notEmpty() implies
  * self.selector.oclIsKindOf(LiteralInteger) or
  * self.selector.oclIsKindOf(LiteralString)

@@ -1,3 +1,5 @@
+#include "structured_classifier.h"
+
 /**~structured classifier~
  * A_ownedPort_encapsulatedClassifier [Association]
  * 

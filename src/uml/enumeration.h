@@ -1,3 +1,5 @@
+#include "datatype.h"
+
 /**~simple classifier~
  * A_ownedLiteral_enumeration [Association]
  * 

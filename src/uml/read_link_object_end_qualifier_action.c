@@ -3,7 +3,8 @@
  * 
  * Description
  * 
- * A ReadLinkObjectEndQualifierAction is an Action that retrieves a qualifier end value from a link object.
+ * A ReadLinkObjectEndQualifierAction is an Action
+ * that retrieves a qualifier end value from a link object.
  * 
  * Diagrams
  * 
@@ -40,7 +41,9 @@
  * 
  *  type_of_object
  * 
- * The type of the object InputPin is the AssociationClass that owns the Association end that has the given
+ * The type of the object InputPin is the 
+ * AssociationClass that owns the 
+ * Association end that has the given
  * qualifier Property.
  * 
  * inv: object.type = qualifier.associationEnd.association
@@ -65,13 +68,16 @@
  * 
  *  same_type
  * 
- * The type of the result OutputPin is the same as the type of the qualifier Property.
+ * The type of the result OutputPin
+ * is the same as the type of the qualifier Property.
  * 
  * inv: result.type = qualifier.type
  * 
  *  association_of_association
  * 
- * The association of the Association end of the qualifier Property must be an AssociationClass.
+ * The association of the Association
+ * end of the qualifier Property
+ * must be an AssociationClass.
  * 
  * inv: qualifier.associationEnd.association.oclIsKindOf(AssociationClass)
  * 

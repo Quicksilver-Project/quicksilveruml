@@ -1,3 +1,6 @@
+#include "behavior.h"
+#include "interaction_fragment.h"
+
 /**~interaction~
  * A_action_interaction [Association]
  * 

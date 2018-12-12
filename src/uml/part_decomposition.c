@@ -21,6 +21,7 @@
  * within X an InteractionUse (say) U that covers L. According to the constraint above U will have a counterpart
  * CU within D. Within the Interaction referenced by U, L should also be decomposed, and the decomposition
  * should reference CU. (This rule is called commutativity of decomposition.)
+ * 
  * Cannot be expressed in OCL
  * 
  *  assume
@@ -32,10 +33,12 @@
  * CombinedFragment in D. ii) An InteractionUse covering L is matched with a global (i.e., covering all
  * Lifelines) InteractionUse in D. iii) A plain OccurrenceSpecification on L is considered an actualGate that must
  * be matched by a formalGate of D.
+ * 
  * Cannot be expressed in OCL
  * 
  *  parts_of_internal_structures
  * 
  * PartDecompositions apply only to Parts that are Parts of Internal Structures not to Parts of Collaborations.
+ * 
  * Cannot be expressed in OCL
 **/

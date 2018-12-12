@@ -1,3 +1,5 @@
+#include "control_node.h"
+
 /**~activity~ 
  * A_decisionInputFlow_decisionNode [Association]
  * 

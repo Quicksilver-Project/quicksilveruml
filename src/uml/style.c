@@ -7,7 +7,8 @@
  * 
  * Generalizations
  * 
- * Style, PackageableElement
+ * Style,
+ * PackageableElement
  * 
  * Attributes
  * 

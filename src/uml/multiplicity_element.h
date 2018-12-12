@@ -1,3 +1,4 @@
+#include "element.h"
 /**~common structure~
  * A_lowerValue_owningLower [Association]
  * 

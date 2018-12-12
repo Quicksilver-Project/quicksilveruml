@@ -1,3 +1,5 @@
+#include "expression.h"
+#include "namespace.h"
 /**~value~
  * A_subExpression_owningExpression [Association]
  * 
@@ -8,6 +10,5 @@
  * Member Ends
  * 
  *  StringExpression::subExpression
- * 
  *  StringExpression::owningExpression
  **/

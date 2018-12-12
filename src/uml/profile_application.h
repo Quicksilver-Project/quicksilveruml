@@ -1,3 +1,4 @@
+#include "directed_relationship.h"
 /**~package~
  * A_appliedProfile_profileApplication [Association]
  * 
@@ -31,6 +32,5 @@
  * Member Ends
  * 
  *  Package::profileApplication
- * 
  *  ProfileApplication::applyingPackage
 **/

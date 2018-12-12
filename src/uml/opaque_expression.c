@@ -43,23 +43,29 @@
  *  isIntegral() : Boolean
  * 
  * The query isIntegral() tells whether an expression is intended to produce an Integer.
+ * 
  * body: false
  * 
  *  isNonNegative() : Boolean
  * 
  * The query isNonNegative() tells whether an integer expression has a non-negative value.
+ * 
  * pre: self.isIntegral()
+ * 
  * body: false
  * 
  *  isPositive() : Boolean
  * 
  * The query isPositive() tells whether an integer expression has a positive value.
+ * 
  * pre: self.isIntegral()
+ * 
  * body: false
  * 
  *  result() : Parameter [0..1]
  * 
  * Derivation for OpaqueExpression::/result
+ * 
  * body: if behavior = null then
  * null
  * else
@@ -70,6 +76,7 @@
  * 
  * The query value() gives an integer value for an expression intended to produce one.
  * pre: self.isIntegral()
+ * 
  * body: 0
  * 
  * Constraints
@@ -77,6 +84,7 @@
  *  language_body_size
  * 
  * If the language attribute is not empty, then the size of the body and language arrays must be the same.
+ * 
  * inv: language->notEmpty() implies (_'body'->size() = language->size())
  * 
  *  one_return_result_parameter
@@ -85,12 +93,14 @@
  * 
  * inv: behavior <> null implies
  * behavior.ownedParameter->select(direction=ParameterDirectionKind::return)->size() = 1
+ * 
  * UMLR-696: The behavior of an OpaqueExpression should be allowed to have input parameters
  * 
  *  only_return_result_parametersonly_in_or_return_parameters
  * 
  * The behavior may only have return result parameters.The behavior may only have non-stream in or return
  * parameters.
+ * 
  * inv: behavior <> null implies behavior.ownedParameter-
  * >select(direction<>ParameterDirectionKind::return)->isEmpty()forAll(not isStream and
  * (direction=ParameterDirectionKind::in or direction=ParameterDirectionKind::return))

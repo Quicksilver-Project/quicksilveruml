@@ -1,3 +1,5 @@
+#include "class.h"
+
 /**~common behavior~
  * A_method_specification [Association]
  * 

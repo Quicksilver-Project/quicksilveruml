@@ -1,3 +1,4 @@
+#include "element.h"
 /**~common structure~
  * A_relatedElement_relationship [Association]
  * 
@@ -7,7 +8,8 @@
  * 
  * Owned Ends
  * 
- *  /relationship : Relationship [0..*]{union} (opposite Relationship::relatedElement)
+ *  /relationship : Relationship [0..*]{union}
+ * (opposite Relationship::relatedElement)
 **/
 /** 
  * A_target_directedRelationship [Association]
@@ -18,6 +20,7 @@
  * 
  * Owned Ends
  * 
- *  /directedRelationship : DirectedRelationship [0..*]{union, subsets
- * A_relatedElement_relationship::relationship} (opposite DirectedRelationship::target)
+ *  /directedRelationship : DirectedRelationship [0..*]
+ * {union, subsets A_relatedElement_relationship::relationship}
+ * (opposite DirectedRelationship::target)
 **/

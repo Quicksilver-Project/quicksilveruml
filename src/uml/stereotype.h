@@ -1,3 +1,4 @@
+#include "class.h"
 /**~package~
  * A_icon_stereotype [Association]
  * 
@@ -7,7 +8,9 @@
  * 
  * Owned Ends
  * 
- *  stereotype : Stereotype [0..1]{subsets Element::owner} (opposite Stereotype::icon)
+ *  stereotype : Stereotype [0..1]
+ * {subsets Element::owner}
+ * (opposite Stereotype::icon)
 **/
 /**
  * A_profile_stereotype [Association]
@@ -18,5 +21,6 @@
  * 
  * Owned Ends
  * 
- *  stereotype : Stereotype [0..*] (opposite Stereotype::profile)
+ *  stereotype : Stereotype [0..*]
+ * (opposite Stereotype::profile)
 **/

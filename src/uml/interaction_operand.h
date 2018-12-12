@@ -1,3 +1,6 @@
+#include "interaction_fragment.h"
+#include "namespace.h"
+
 /**~interaction~
  * A_fragment_enclosingOperand [Association]
  * 

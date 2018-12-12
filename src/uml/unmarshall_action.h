@@ -1,3 +1,4 @@
+#include "action.h"
 /**~action~
  * A_object_unmarshallAction [Association]
  * 
@@ -7,7 +8,9 @@
  * 
  * Owned Ends
  * 
- *  unmarshallAction : UnmarshallAction [0..1]{subsets A_input_action::action} (opposite
+ *  unmarshallAction : UnmarshallAction [0..1]
+ * {subsets A_input_action::action}
+ * (opposite
  * UnmarshallAction::object)
 **/
 /**
@@ -19,7 +22,9 @@
  * 
  * Owned Ends
  * 
- *  unmarshallAction : UnmarshallAction [0..1]{subsets A_output_action::action} (opposite
+ *  unmarshallAction : UnmarshallAction [0..1]
+ * {subsets A_output_action::action}
+ * (opposite
  * UnmarshallAction::result)
 **/
 /**
@@ -31,5 +36,6 @@
  * 
  * Owned Ends
  * 
- *  unmarshallAction : UnmarshallAction [0..*] (opposite UnmarshallAction::unmarshallType)
+ *  unmarshallAction : UnmarshallAction [0..*]
+ * (opposite UnmarshallAction::unmarshallType)
 **/

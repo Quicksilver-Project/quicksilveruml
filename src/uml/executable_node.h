@@ -1,3 +1,5 @@
+#include "activity_node.h"
+
 /**~activity~ 
  * A_handler_protectedNode [Association]
  * 

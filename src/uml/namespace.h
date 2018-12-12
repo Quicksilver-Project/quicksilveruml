@@ -1,3 +1,4 @@
+#include "named_element.h"
 /**~common structure~
  * A_packagedElement_owningPackage [Association]
  * 
@@ -84,7 +85,6 @@
  *  Namespace::ownedRule
  *  Constraint::context
 **/
-
 /**
  * A_packageImport_importingNamespace [Association]
  * 

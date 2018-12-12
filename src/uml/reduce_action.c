@@ -3,8 +3,13 @@
  * 
  * Description
  * 
- * A ReduceAction is an Action that reduces a collection to a single value by repeatedly combining the elements of the
- * collection using a reducer Behavior.
+ * A ReduceAction is an Action
+ * that reduces a collection
+ * to a single value by
+ * repeatedly combining
+ * the elements of the
+ * collection using
+ * a reducer Behavior.
  * 
  * Diagrams
  * 
@@ -18,7 +23,10 @@
  * 
  *  isOrdered : Boolean [1..1] = false
  * 
- * Indicates whether the order of the input collection should determine the order in which the reducer Behavior is
+ * Indicates whether the order
+ * of the input collection
+ * should determine the order
+ * in which the reducer Behavior is
  * applied to its elements.
  * 
  * Association Ends
@@ -29,20 +37,36 @@
  * 
  *  reducer : Behavior [1..1] (opposite A_reducer_reduceAction::reduceAction)
  * 
- * A Behavior that is repreatedly applied to two elements of the input collection to produce a value that is of the
- * same type as elements of the collection.
+ * A Behavior that is repreatedly
+ * applied to two elements of
+ * the input collection to
+ * produce a value
+ * that is of the
+ * same type as 
+ * elements of 
+ * the collection.
  * 
- *  ♦ result : OutputPin [1..1]{subsets Action::output} (opposite A_result_reduceAction::reduceAction)
+ *  ♦ result : OutputPin [1..1]
+ * {subsets Action::output}
+ * (opposite A_result_reduceAction::reduceAction)
  * 
- * The output pin on which the result value is placed.
+ * The output pin on which
+ * the result value is placed.
  * 
  * Constraints
  * 
  *  reducer_inputs_output
  * 
- * The reducer Behavior must have two input ownedParameters and one output ownedParameter, where the type
- * 
- * of the output Parameter and the type of elements of the input collection conform to the types of the input
+ * The reducer Behavior
+ * must have two input
+ * ownedParameters and
+ * one output ownedParameter,
+ * where the type
+ * of the output Parameter 
+ * and the type of elements 
+ * of the input collection 
+ * conform to the 
+ * types of the input
  * Parameters.
  * 
  * inv: let inputs: OrderedSet(Parameter) = reducer.inputParameters() in
@@ -57,6 +81,7 @@
  *  input_type_is_collection
  * 
  * The type of the collection InputPin must be a collection.
+ * 
  * Cannot be expressed in OCL
  * 
  *  output_types_are_compatible

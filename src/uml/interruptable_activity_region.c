@@ -32,6 +32,7 @@
  * 
  * The interruptingEdges of an InterruptibleActivityRegion must have their source in the region and their target
  * outside the region, but within the same Activity containing the region.
+ * 
  * inv: interruptingEdge->forAll(edge |
  * node->includes(edge.source) and node->excludes(edge.target) and
  * edge.target.containingActivity() = inActivity)

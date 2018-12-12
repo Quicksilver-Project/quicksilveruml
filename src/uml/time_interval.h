@@ -1,3 +1,4 @@
+#include "interval.h"
 /**~value~
  * A_max_timeInterval [Association]
  * 
@@ -11,7 +12,9 @@
  * 
  * Owned Ends
  * 
- *  timeInterval : TimeInterval [0..*]{redefines A_max_interval::interval} (opposite TimeInterval::max)
+ *  timeInterval : TimeInterval [0..*]
+ * {redefines A_max_interval::interval}
+ * (opposite TimeInterval::max)
 **/
 /**
  * A_min_timeInterval [Association]
@@ -26,5 +29,7 @@
  * 
  * Owned Ends
  * 
- *  timeInterval : TimeInterval [0..*]{redefines A_min_interval::interval} (opposite TimeInterval::min)
+ *  timeInterval : TimeInterval [0..*]
+ * {redefines A_min_interval::interval}
+ * (opposite TimeInterval::min)
 **/

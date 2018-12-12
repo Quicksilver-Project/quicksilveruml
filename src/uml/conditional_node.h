@@ -1,3 +1,5 @@
+#include "structured_activity_node.h"
+
 /**~action~
  * A_clause_conditionalNode [Association]
  * 

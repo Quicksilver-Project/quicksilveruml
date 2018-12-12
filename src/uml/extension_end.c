@@ -34,6 +34,7 @@
  * 
  * The query lowerBound() returns the lower bound of the multiplicity as an Integer. This is a redefinition of the
  * default lower bound, which normally, for MultiplicityElements, evaluates to 1 if empty.
+ * 
  * body: if lowerValue=null then 0 else lowerValue.integerValue() endif
  * 
  * Constraints
@@ -41,10 +42,12 @@
  *  multiplicity
  * 
  * The multiplicity of ExtensionEnd is 0..1 or 1.
+ * 
  * inv: (lowerBound() = 0 or lowerBound() = 1) and upperBound() = 1
  * 
  *  aggregation
  * 
  * The aggregation of an ExtensionEnd is composite.
+ * 
  * inv: self.aggregation = AggregationKind::composite
 **/

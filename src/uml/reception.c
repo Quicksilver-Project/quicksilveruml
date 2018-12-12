@@ -24,11 +24,13 @@
  *  same_name_as_signal
  * 
  * A Reception has the same name as its signal
+ * 
  * inv: name = signal.name
  * 
  *  same_structure_as_signal
  * 
  * A Reception's parameters match the ownedAttributes of its signal by name, type, and multiplicity
+ * 
  * inv: signal.ownedAttribute->size() = ownedParameter->size() and
  * Sequence{1..signal.ownedAttribute->size()}->forAll( i |
  * ownedParameter->at(i).direction = ParameterDirectionKind::_'in' and

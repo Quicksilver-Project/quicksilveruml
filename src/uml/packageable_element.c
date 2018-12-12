@@ -32,5 +32,6 @@
  *  namespace_needs_visibility
  * 
  * A PackageableElement owned by a Namespace must have a visibility.
+ * 
  * inv: visibility = null implies namespace = null
 **/

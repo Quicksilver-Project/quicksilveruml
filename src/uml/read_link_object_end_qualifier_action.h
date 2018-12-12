@@ -1,3 +1,4 @@
+#include "action.h"
 /**~action~
  * A_object_readLinkObjectEndQualifierAction [Association]
  * 
@@ -10,7 +11,6 @@
  *  readLinkObjectEndQualifierAction : ReadLinkObjectEndQualifierAction [0..1]{subsets
  * A_input_action::action} (opposite ReadLinkObjectEndQualifierAction::object)
 **/
-
 /**
  * A_qualifier_readLinkObjectEndQualifierAction [Association]
  * 

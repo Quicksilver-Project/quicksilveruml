@@ -1,3 +1,5 @@
+#include "message_event.h"
+
 /**~common behavior~
  * A_receiveEvent_endMessage [Association]
  * 

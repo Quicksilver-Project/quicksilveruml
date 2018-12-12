@@ -1,4 +1,3 @@
-
 /**~action~
  * ReadVariableAction [Class]
  * 
@@ -16,8 +15,8 @@
  * 
  * Association Ends
  * 
- *  ♦ result : OutputPin [1..1]{subsets Action::output} (opposite
- * A_result_readVariableAction::readVariableAction)
+ *  ♦ result : OutputPin [1..1]{subsets Action::output}
+ * (opposite A_result_readVariableAction::readVariableAction)
  * 
  * The OutputPin on which the result values are placed.
  * 

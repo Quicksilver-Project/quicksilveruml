@@ -51,6 +51,7 @@
  *  endType() : Type [1..*]
  * 
  * endType is derived from the types of the member ends.
+ * 
  * body: memberEnd->collect(type)->asSet()
  * 
  * Constraints
@@ -58,6 +59,7 @@
  *  specialized_end_number
  * 
  * An Association specializing another Association has the same number of ends as the other Association.
+ * 
  * inv: parents()->select(oclIsKindOf(Association)).oclAsType(Association)->forAll(p |
  * p.memberEnd->size() = self.memberEnd->size())
  * 
@@ -66,6 +68,7 @@
  * When an Association specializes another Association, every end of the specific Association corresponds to an
  * end of the general Association, and the specific end reaches the same type or a subtype of the corresponding
  * general end.
+ * 
  * inv: Sequence{1..memberEnd->size()}->
  * forAll(i | general->select(oclIsKindOf(Association)).oclAsType(Association)->
  * forAll(ga | self.memberEnd->at(i).type.conformsTo(ga.memberEnd->at(i).type)))
@@ -73,14 +76,17 @@
  *  binary_associations
  * 
  * Only binary Associations can be aggregations.
+ * 
  * inv: memberEnd->exists(aggregation <> AggregationKind::none) implies (memberEnd->size() = 2
  * and memberEnd->exists(aggregation = AggregationKind::none))
  * 
  *  association_ends
  * 
  * Ends of Associations with more than two ends must be owned by the Association itself.
+ * 
  * inv: memberEnd->size() > 2 implies ownedEnd->includesAll(memberEnd)
  * 
  *  ends_must_be_typed
+ * 
  * inv: memberEnd->forAll(type->notEmpty())
 **/

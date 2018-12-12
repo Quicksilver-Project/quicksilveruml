@@ -1,3 +1,4 @@
+#include "vertex.h"
 /**~state machine~
  * A_connectionPoint_state [Association]
  * 
@@ -8,7 +9,6 @@
  * Member Ends
  * 
  *  State::connectionPoint
- * 
  *  Pseudostate::state
 **/
 /**
@@ -21,6 +21,5 @@
  * Member Ends
  * 
  *  StateMachine::connectionPoint
- * 
  *  Pseudostate::stateMachine
 **/

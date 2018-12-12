@@ -1,3 +1,4 @@
+#include "shape.h"
 /**~UML Diagram Interchange~
  * A_UMLCompartmentableShape_compartmentedShape_shape[Association]
  * 

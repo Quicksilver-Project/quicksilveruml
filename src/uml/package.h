@@ -1,3 +1,6 @@
+#include "namespace.h"
+#include "packageable_element.h"
+#include "templateable_element.h"
 /**~package~
  * A_nestedPackage_nestingPackage [Association]
  * 
@@ -8,7 +11,6 @@
  * Member Ends
  * 
  *  Package::nestedPackage
- * 
  *  Package::nestingPackage
 **/
 /**
@@ -37,7 +39,6 @@
  * Member Ends
  * 
  *  Package::ownedType
- * 
  *  Type::package
 **/
 /**
@@ -50,7 +51,6 @@
  * Member Ends
  * 
  *  Package::packageMerge
- * 
  *  PackageMerge::receivingPackage
 **/
 /**
@@ -78,6 +78,5 @@
  * Member Ends
  * 
  *  Package::profileApplication
- * 
  *  ProfileApplication::applyingPackage
 **/

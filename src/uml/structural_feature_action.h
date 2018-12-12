@@ -1,3 +1,4 @@
+#include "action.h"
 /**~action~
  * A_object_structuralFeatureAction [Association]
  * 
@@ -7,7 +8,9 @@
  * 
  * Owned Ends
  * 
- *  structuralFeatureAction : StructuralFeatureAction [0..1]{subsets A_input_action::action} (opposite
+ *  structuralFeatureAction : StructuralFeatureAction
+ * [0..1]{subsets A_input_action::action}
+ * (opposite
  * StructuralFeatureAction::object)
 **/
 /**
@@ -19,5 +22,6 @@
  * 
  * Owned Ends
  * 
- *  structuralFeatureAction : StructuralFeatureAction [0..*] (opposite StructuralFeatureAction::structuralFeature)
+ *  structuralFeatureAction : StructuralFeatureAction [0..*]
+ * (opposite StructuralFeatureAction::structuralFeature)
 **/

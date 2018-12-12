@@ -1,3 +1,4 @@
+#include "element.h"
 /**~common structure~
  * A_default_templateParameter [Association]
  * 
@@ -11,7 +12,8 @@
  * 
  * Owned Ends
  * 
- *  templateParameter : TemplateParameter [0..*] (opposite TemplateParameter::default)
+ *  templateParameter : TemplateParameter [0..*]
+ * (opposite TemplateParameter::default)
 **/
 /**
  * A_ownedDefault_templateParameter [Association]
@@ -26,8 +28,10 @@
  * 
  * Owned Ends
  * 
- *  templateParameter : TemplateParameter [0..1]{subsets Element::owner, redefines
- * A_default_templateParameter::templateParameter} (opposite TemplateParameter::ownedDefault)
+ *  templateParameter : TemplateParameter
+ * [0..1]{subsets Element::owner, redefines
+ * A_default_templateParameter::templateParameter}
+ * (opposite TemplateParameter::ownedDefault)
 **/
 /**
  * A_ownedParameter_signature [Association]
@@ -39,7 +43,6 @@
  * Member Ends
  * 
  *  TemplateSignature::ownedParameter
- * 
  *  TemplateParameter::signature
 **/
 /**
@@ -52,7 +55,6 @@
  * Member Ends
  * 
  *  TemplateParameter::ownedParameteredElement
- * 
  *  ParameterableElement::owningTemplateParameter
 **/
 /**
@@ -65,6 +67,5 @@
  * Member Ends
  * 
  *  TemplateParameter::parameteredElement
- * 
  *  ParameterableElement::templateParameter
 **/

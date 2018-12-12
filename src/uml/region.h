@@ -1,3 +1,5 @@
+#include "namespace.h"
+#include "redefinable_element.h"
 /**~state machine~
  * A_extendedRegion_region [Association]
  * 
@@ -7,8 +9,9 @@
  * 
  * Owned Ends
  * 
- *  region : Region [0..*]{subsets A_redefinedElement_redefinableElement::redefinableElement} (opposite
- * Region::extendedRegion)
+ *  region : Region [0..*]
+ * {subsets A_redefinedElement_redefinableElement::redefinableElement}
+ * (opposite Region::extendedRegion)
 **/
 /**
  * A_redefinitionContext_region [Association]
@@ -23,8 +26,10 @@
  * 
  * Owned Ends
  * 
- *  region : Region [0..*]{subsets A_redefinitionContext_redefinableElement::redefinableElement} (opposite
- * Region::redefinitionContext)
+ *  region : Region [0..*]
+ * {subsets A_redefinitionContext_redefinableElement::redefinableElement}
+ * (opposite Region::redefinitionContext)
+ * 
  * UMLR-685: StateMachine Vertex needs to be made a kind of RedefinableElement instead of State
 **/
 /**
@@ -37,7 +42,6 @@
  * Member Ends
  * 
  *  State::region
- * 
  *  Region::state
 **/
 /**
@@ -50,7 +54,6 @@
  * Member Ends
  * 
  *  StateMachine::region
- * 
  *  Region::stateMachine
 **/
 /**
@@ -63,7 +66,6 @@
  * Member Ends
  * 
  *  Region::subvertex
- * 
  *  Vertex::container
 **/
 /**
@@ -76,6 +78,5 @@
  * Member Ends
  * 
  *  Region::transition
- * 
  *  Transition::container
 **/

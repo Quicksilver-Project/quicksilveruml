@@ -1,3 +1,6 @@
+#include "element.h"
+#include "redefinable_element.h"
+#include "vertex.h"
 /**~state machine~
  * A_connectionPoint_state [Association]
  * 
@@ -8,7 +11,6 @@
  * Member Ends
  * 
  *  State::connectionPoint
- * 
  *  Pseudostate::state
 **/
 /**
@@ -21,7 +23,6 @@
  * Member Ends
  * 
  *  State::connection
- * 
  *  ConnectionPointReference::state
 **/
 /**
@@ -77,7 +78,10 @@
  * 
  * Owned Ends
  * 
- *  state : State [0..*]{subsets A_redefinedElement_redefinableElement::redefinableElement} (opposite
+ *  state : State [0..*]
+ * {subsets A_redefinedElement_redefinableElement
+ * ::redefinableElement}
+ * (opposite
  * State::redefinedState)
 **/
 /**
@@ -93,7 +97,10 @@
  * 
  * Owned Ends
  * 
- * state : State [0..*]{subsets A_redefinitionContext_redefinableElement::redefinableElement} (opposite
+ * state : State [0..*]
+ * {subsets A_redefinitionContext_redefinableElement
+ * ::redefinableElement}
+ * (opposite
  * State::redefinitionContext)
 **/
 /**
@@ -106,7 +113,6 @@
  * Member Ends
  * 
  *  State::region
- * 
  *  Region::state
 **/
 /**
@@ -130,7 +136,6 @@
  * Member Ends
  * 
  *  StateMachine::submachineState
- * 
  *  State::submachine
 **/
 /**
@@ -143,6 +148,5 @@
  * Member Ends
  * 
  *  StateMachine::submachineState
- * 
  *  State::submachine
 **/

@@ -1,3 +1,5 @@
+#include "named_element.h"
+#include "redefinableElement"
 /**~state machine~
  * A_incoming_target_vertex [Association]
  * 
@@ -8,7 +10,6 @@
  * Member Ends
  * 
  *  Vertex::incoming
- * 
  *  Transition::target
 **/
 /**
@@ -21,7 +22,6 @@
  * Member Ends
  * 
  *  Vertex::outgoing
- * 
  *  Transition::source
 **/
 /**
@@ -33,7 +33,10 @@
  * 
  * Owned Ends
  * 
- * • vertex : Vertex [0..*] {subsets A_redefinedElement_redefinableElement::redefinableElement} (opposite
+ * • vertex : Vertex [0..*]
+ * {subsets A_redefinedElement_redefinableElement
+ * ::redefinableElement}
+ * (opposite
  * Vertex::redefinedVertex)
 **/
 /**
@@ -49,7 +52,9 @@
  * 
  * Owned Ends
  * 
- *  vertex : Vertex [0..*]{subsets A_redefinitionContext_redefinableElement::redefinableElement}
+ *  vertex : Vertex [0..*]
+ * {subsets A_redefinitionContext_redefinableElement
+ * ::redefinableElement}
  * (opposite Vertex::redefinitionContext)
 **/
 /**
@@ -62,6 +67,5 @@
  * Member Ends
  * 
  *  Region::subvertex
- * 
  *  Vertex::container
 **/

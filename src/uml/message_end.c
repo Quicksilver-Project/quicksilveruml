@@ -31,23 +31,29 @@
  * MessageEnd.
  * 
  * pre: message->notEmpty()
+ * 
  * body: message->asSet().messageEnd->asSet()->excluding(self)
  * 
  *  isSend() : Boolean
  * 
  * This query returns value true if this MessageEnd is a sendEvent.
+ * 
  * pre: message->notEmpty()
+ * 
  * body: message.sendEvent->asSet()->includes(self)
  * 
  *  isReceive() : Boolean
  * 
  * This query returns value true if this MessageEnd is a receiveEvent.
+ * 
  * pre: message->notEmpty()
+ * 
  * body: message.receiveEvent->asSet()->includes(self)
  * 
  *  enclosingFragment() : InteractionFragment [0..*]
  * 
  * This query returns a set including the enclosing InteractionFragment this MessageEnd is enclosed within.
+ * 
  * body: if self->select(oclIsKindOf(Gate))->notEmpty()
  * then -- it is a Gate
  * let endGate : Gate =

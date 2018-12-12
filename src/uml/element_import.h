@@ -1,3 +1,5 @@
+#include "directed_relationship.h"
+
 /**~common structure~
  * A_metaclassReference_profile [Association]
  * 

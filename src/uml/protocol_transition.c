@@ -27,20 +27,24 @@
  *  ♦ preCondition : Constraint [0..1]{subsets Transition::guard} (opposite
  * A_preCondition_protocolTransition::protocolTransition)
  * 
- * Specifies the precondition of the Transition. It specifies the Condition that should be verified before triggering
- * the Transition. This guard condition added to the source State will be evaluated as part of the precondition of
+ * Specifies the precondition of the Transition.
+ * 
+ * It specifies the Condition that should be verified before triggering the Transition.
+ * 
+ * This guard condition added to the source State will be evaluated as part of the precondition of
  * the Operation referred by the Transition if any.
  * 
  *  /referred : Operation [0..*]{} (opposite A_referred_protocolTransition::protocolTransition)
  * 
- * This association refers to the associated Operation. It is derived from the Operation of the CallEvent Trigger
- * when applicable.
+ * This association refers to the associated Operation.
+ * It is derived from the Operation of the CallEvent Trigger when applicable.
  * 
  * Operations
  * 
  *  referred() : Operation [0..*]
  * 
  * Derivation for ProtocolTransition::/referred
+ * 
  * body: trigger->collect(event)->select(oclIsKindOf(CallEvent))-
  * >collect(oclAsType(CallEvent).operation)->asSet()
  * 
@@ -48,8 +52,10 @@
  * 
  *  refers_to_operation
  * 
- * If a ProtocolTransition refers to an Operation (i.e., has a CallEvent trigger corresponding to an Operation), then
+ * If a ProtocolTransition refers to an Operation 
+ * (i.e., has a CallEvent trigger corresponding to an Operation), then
  * that Operation should apply to the context Classifier of the StateMachine of the ProtocolTransition.
+ * 
  * inv: if (referred()->notEmpty() and containingStateMachine()._'context'->notEmpty()) then
  * containingStateMachine()._'context'.oclAsType(BehavioredClassifier).allFeatures()-
  * >includesAll(referred())
@@ -58,10 +64,12 @@
  *  associated_actions
  * 
  * A ProtocolTransition never has associated Behaviors.
+ * 
  * inv: effect = null
  * 
  *  belongs_to_psm
  * 
  * A ProtocolTransition always belongs to a ProtocolStateMachine.
+ * 
  * inv: container.belongsToPSM()
 **/

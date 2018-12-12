@@ -3,7 +3,8 @@
  * 
  * Description
  * 
- * WriteLinkAction is an abstract class for LinkActions that create and destroy links.
+ * WriteLinkAction is an abstract class for
+ * LinkActions that create and destroy links.
  * 
  * Diagrams
  * 
@@ -21,7 +22,8 @@
  * 
  *  allow_access
  * 
- * The visibility of at least one end must allow access from the context Classifier of the WriteLinkAction.
+ * The visibility of at least one end must allow access
+ * from the context Classifier of the WriteLinkAction.
  * 
  * inv: endData.end->exists(end |
  * end.type=_'context' or

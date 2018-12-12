@@ -17,6 +17,7 @@
  * Element
  * 
  * Specializations
+ * 
  * Namespace, PackageableElement, TypedElement, ActivityGroup, Trigger, Extend, Include, CollaborationUse,
  * Vertex, GeneralOrdering, InteractionFragment, Lifeline, Message, MessageEnd, DeployedArtifact,
  * DeploymentTarget, ParameterSet, RedefinableElement

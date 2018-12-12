@@ -1,3 +1,5 @@
+#include "action.h"
+
 /**~action~
  * A_association_clearAssociationAction [Association]
  * 

@@ -1,3 +1,5 @@
+#include "named_element.h"
+
 /**~interaction~
  * A_before_toAfter [Association]
  * 

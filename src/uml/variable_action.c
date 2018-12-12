@@ -3,7 +3,9 @@
  * 
  * Description
  * 
- * VariableAction is an abstract class for Actions that operate on a specified Variable.
+ * VariableAction is an abstract class
+ * for Actions that operate on a
+ * specified Variable.
  * 
  * Diagrams
  * 
@@ -15,11 +17,14 @@
  * 
  * Specializations
  * 
- * WriteVariableAction, ClearVariableAction, ReadVariableAction
+ * WriteVariableAction,
+ * ClearVariableAction,
+ * ReadVariableAction
  * 
  * Association Ends
  * 
- *  variable : Variable [1..1] (opposite A_variable_variableAction::variableAction)
+ *  variable : Variable [1..1]
+ * (opposite A_variable_variableAction::variableAction)
  * 
  * The Variable to be read or written.
  * 
@@ -27,7 +32,8 @@
  * 
  *  scope_of_variable
  * 
- * The VariableAction must be in the scope of the variable.
+ * The VariableAction must be
+ * in the scope of the variable.
  * 
  * inv: variable.isAccessibleBy(self)
 **/

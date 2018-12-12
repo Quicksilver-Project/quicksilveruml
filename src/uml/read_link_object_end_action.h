@@ -1,3 +1,4 @@
+#include "action.h"
 /**~action~
  * A_end_readLinkObjectEndAction [Association]
  * 

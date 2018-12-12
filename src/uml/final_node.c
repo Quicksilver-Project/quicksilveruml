@@ -22,5 +22,6 @@
  *  no_outgoing_edges
  * 
  * A FinalNode has no outgoing ActivityEdges.
+ * 
  * inv: outgoing->isEmpty()
 **/

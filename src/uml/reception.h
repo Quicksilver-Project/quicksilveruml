@@ -1,3 +1,4 @@
+#include "behavioral_feature.h"
 /**~simple classifier~
  * A_signal_reception [Association]
  * 

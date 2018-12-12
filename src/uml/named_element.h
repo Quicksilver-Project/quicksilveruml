@@ -1,3 +1,4 @@
+#include "element.h"
 /**~common structure~
  * A_clientDependency_client [Association]
  * 
@@ -8,7 +9,6 @@
  * Member Ends
  * 
  *  NamedElement::clientDependency
- * 
  *  Dependency::client
 **/
 /**
@@ -33,6 +33,5 @@
  * Member Ends
  * 
  *  Namespace::ownedMember
- * 
  *  NamedElement::namespace
 **/

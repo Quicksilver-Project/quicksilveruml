@@ -24,10 +24,12 @@
  *  isComputable() : Boolean {redefines ValueSpecification::isComputable()}
  * 
  * The query isComputable() is redefined to be true.
+ * 
  * body: true
  * 
  *  unlimitedValue() : UnlimitedNatural {redefines ValueSpecification::unlimitedValue()}
  * 
  * The query unlimitedValue() gives the value.
+ * 
  * body: value
 **/

@@ -1,3 +1,43 @@
+#include "activity_node.h"
+#include "behavior.h"
+#include "classifier.h"
+#include "executable_node.h"
+#include "input_pin.h"
+#include "constraint.h"
+#include "output_pin.h"
+
+#ifndef Action
+
+#endif
+/**
+ * Enable:
+ * 
+ * ValueSpecificationAction
+ * VariableAction
+ * AcceptEventAction
+ * ClearAssociationAction
+ * CreateObjectAction
+ * DestroyObjectAction
+ * InvocationAction
+ * LinkAction
+ * OpaqueAction
+ * RaiseExceptionAction
+ * ReadExtentAction
+ * ReadIsClassifiedObjectAction
+ * ReadLinkObjectEndAction
+ * ReadLinkObjectEndQualifierAction
+ * ReadSelfAction
+ * ReclassifyObjectAction
+ * ReduceAction
+ * ReplyAction
+ * StartClassifierBehaviorAction
+ * StructuralFeatureAction
+ * StructuredActivityNode
+ * TestIdentityAction
+ * UnmarshallAction
+ * 
+ * If conditions are satisfactory.
+**/
 /**~action~
  * A_collection_reduceAction [Association]
  * 

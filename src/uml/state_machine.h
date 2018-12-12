@@ -1,3 +1,4 @@
+#include "behavior.h"
 /**~state machine~
  * A_connectionPoint_stateMachine [Association]
  * 
@@ -8,7 +9,6 @@
  * Member Ends
  * 
  *  StateMachine::connectionPoint
- * 
  *  Pseudostate::stateMachine
 **/
 /**
@@ -20,7 +20,9 @@
  * 
  * Owned Ends
  * 
- *  stateMachine : StateMachine [0..*]{subsets A_redefinedBehavior_behavior::behavior} (opposite
+ *  stateMachine : StateMachine [0..*]
+ * {subsets A_redefinedBehavior_behavior::behavior}
+ * (opposite
  * StateMachine::extendedStateMachine)
 **/
 /**
@@ -33,7 +35,6 @@
  * Member Ends
  * 
  *  StateMachine::region
- * 
  *  Region::stateMachine
 **/
 /**
@@ -46,6 +47,5 @@
  * Member Ends
  * 
  *  StateMachine::submachineState
- * 
  *  State::submachine
 **/

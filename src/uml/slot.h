@@ -1,3 +1,4 @@
+#include "element.h"
 /**~classification~
  * A_definingFeature_slot [Association]
  * 
@@ -19,7 +20,6 @@
  * Member Ends
  * 
  *  InstanceSpecification::slot
- * 
  *  Slot::owningInstance
 **/
 /**
@@ -54,7 +54,6 @@
  * Member Ends
  * 
  *  InstanceSpecification::slot
- * 
  *  Slot::owningInstance
 **/
 /**

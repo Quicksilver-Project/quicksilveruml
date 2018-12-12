@@ -19,15 +19,17 @@
  * 
  * The specified String value.
  * 
- * 8.6.13.5 Operations
+ * Operations
  * 
  *  isComputable() : Boolean {redefines ValueSpecification::isComputable()}
  * 
  * The query isComputable() is redefined to be true.
+ * 
  * body: true
  * 
  *  stringValue() : String {redefines ValueSpecification::stringValue()}
  * 
  * The query stringValue() gives the value.
+ * 
  * body: value
 **/

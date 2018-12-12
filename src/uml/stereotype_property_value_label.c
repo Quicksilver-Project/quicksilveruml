@@ -3,7 +3,8 @@
  * 
  * Description
  * 
- * For showing Property values of Stereotypes applied to UML abstract syntax elements.
+ * For showing Property values of Stereotypes
+ * applied to UML abstract syntax elements.
  * 
  * Generalizations
  * 
@@ -11,16 +12,21 @@
  * 
  * Association Ends
  * 
- *  modelElement : Property [1..1]{redefines UMLDiagramElement::modelElement} (opposite
- * A_UMLStereotypePropertyValueLabel_modelElement_umlDiagramElement::umlDiagramElement)
+ *  modelElement : Property [1..1]
+ * {redefines UMLDiagramElement::modelElement}
+ * (opposite
+ * A_UMLStereotypePropertyValueLabel_modelElement_umlDiagramElement
+ * ::umlDiagramElement)
  * 
- * A Property of a Stereotype applied to the stereotypedElement.
+ * A Property of a Stereotype 
+ * applied to the stereotypedElement.
  * 
  *  stereotypedElement : Element [1..1] (opposite
- * A_UMLStereotypePropertyValueLabel_stereotypedElement_labelShowingStereotypeValue::labelShowingSter
- * eotypeValue)
+ * A_UMLStereotypePropertyValueLabel_stereotypedElement_labelShowingStereotypeValue
+ * ::labelShowingStereotypeValue)
  * 
- * Element to which a Stereotype having the modelElement (Property) is applied.
+ * Element to which a Stereotype
+ * having the modelElement (Property) is applied.
  * 
  * Constraints
  * 
@@ -32,7 +38,8 @@
  * 
  *  stereotypedElement
  * 
- * Property must be on Stereotype applied to stereotypedElement.
+ * Property must be on Stereotype
+ * applied to stereotypedElement.
  * 
  * inv:
 **/

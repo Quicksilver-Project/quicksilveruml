@@ -1,3 +1,5 @@
+#include "observation.h"
+
 /**~value~
  * A_event_durationObservation [Association]
  * 

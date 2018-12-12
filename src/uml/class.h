@@ -1,3 +1,6 @@
+#include "behaviored_classifier.h"
+#include "encapsulated_classifier.h"
+
 /**~structured classifier~
  * A_superClass_class [Association]
  * 

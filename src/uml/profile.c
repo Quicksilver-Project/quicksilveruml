@@ -31,6 +31,7 @@
  *  metaclass_reference_not_specialized
  * 
  * An element imported as a metaclassReference is not specialized or generalized in a Profile.
+ * 
  * inv: metaclassReference.importedElement->
  * select(c | c.oclIsKindOf(Classifier) and
  * (c.oclAsType(Classifier).allParents()->collect(namespace)->includes(self)))-
@@ -45,6 +46,7 @@
  * 
  * All elements imported either as metaclassReferences or through metamodelReferences are members of the
  * same base reference metamodel.
+ * 
  * inv: metamodelReference.importedPackage.elementImport.importedElement.allOwningPackages()->
  * union(metaclassReference.importedElement.allOwningPackages() )->notEmpty()
 **/

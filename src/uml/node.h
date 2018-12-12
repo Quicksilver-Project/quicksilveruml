@@ -1,3 +1,5 @@
+#include "class.h"
+#include "deployment_target.h"
 /**~deployment~ 
  * A_nestedNode_node [Association]
  * 

@@ -4,12 +4,20 @@
  * Description
  * 
  * A Property is a StructuralFeature. A Property related by ownedAttribute to a Classifier (other than an association)
- * represents an attribute and might also represent an association end. It relates an instance of the Classifier to a value or
- * set of values of the type of the attribute. A Property related by memberEnd to an Association represents an end of the
- * Association. The type of the Property is the type of the end of the Association. A Property has the capability of being a
- * DeploymentTarget in a Deployment relationship. This enables modeling the deployment to hierarchical nodes that have
- * Properties functioning as internal parts. Property specializes ParameterableElement to specify that a Property can be
- * exposed as a formal template parameter, and provided as an actual parameter in a binding of a template.
+ * represents an attribute and might also represent an association end.
+ * 
+ * It relates an instance of the Classifier to a value or set of values of the type of the attribute.
+ * 
+ * A Property related by memberEnd to an Association represents an end of the Association.
+ * 
+ * The type of the Property is the type of the end of the Association.
+ * 
+ * A Property has the capability of being a DeploymentTarget in a Deployment relationship.
+ * 
+ * This enables modeling the deployment to hierarchical nodes that have Properties functioning as internal parts.
+ * 
+ * Property specializes ParameterableElement to specify that a Property can be exposed as a formal template parameter,
+ * and provided as an actual parameter in a binding of a template.
  * 
  * Diagrams
  * 
@@ -32,13 +40,12 @@
  * 
  *  /isComposite : Boolean [1..1] = false
  * 
- * If isComposite is true, the object containing the attribute is a container for the object or value contained in the
- * attribute. This is a derived value, indicating whether the aggregation of the Property is composite or not.
+ * If isComposite is true, the object containing the attribute is a container for the object or value contained in the attribute.
+ * This is a derived value, indicating whether the aggregation of the Property is composite or not.
  * 
  *  isDerived : Boolean [1..1] = false
  * 
- * Specifies whether the Property is derived, i.e., whether its value or values can be computed from other
- * information.
+ * Specifies whether the Property is derived, i.e., whether its value or values can be computed from other information.
  * 
  *  isDerivedUnion : Boolean [1..1] = false
  * 
@@ -115,10 +122,13 @@
  *  isCompatibleWith(p : ParameterableElement) : Boolean {redefines
  * ParameterableElement::isCompatibleWith()}
  * 
- * The query isCompatibleWith() determines if this Property is compatible with the specified
- * ParameterableElement. This Property is compatible with ParameterableElement p if the kind of this Property is
- * thesame as or a subtype of the kind of p. Further, if p is a TypedElement, then the type of this Property must be
- * conformant with the type of p.
+ * The query isCompatibleWith() determines if this Property is compatible with the specified ParameterableElement.
+ * 
+ * This Property is compatible with ParameterableElement p
+ * 
+ * if the kind of this Property is the same as or a subtype of the kind of p.
+ * 
+ * Further, if p is a TypedElement, then the type of this Property must be conformant with the type of p.
  * 
  * body: self.oclIsKindOf(p.oclType()) and (p.oclIsKindOf(TypeElement) implies
  * self.type.conformsTo(p.oclAsType(TypedElement).type))
@@ -133,8 +143,11 @@
  * RedefinableElement::isConsistentWith()}
  * 
  * The query isConsistentWith() specifies, for any two Properties in a context in which redefinition is possible,
- * whether redefinition would be logically consistent. A redefining Property is consistent with a redefined
- * Property if the type of the redefining Property conforms to the type of the redefined Property, and the
+ * whether redefinition would be logically consistent.
+ * 
+ * A redefining Property is consistent with a redefined Property
+ * 
+ * if the type of the redefining Property conforms to the type of the redefined Property, and the
  * multiplicity of the redefining Property (if specified) is contained in the multiplicity of the redefined Property.
  * 
  * pre: redefiningElement.isRedefinitionContextValid(self)
@@ -167,9 +180,15 @@
  * 
  *  subsettingContext() : Type [0..*]
  * 
- * The query subsettingContext() gives the context for subsetting a Property. It consists, in the case of an
- * attribute, of the corresponding Classifier, and in the case of an association end, all of the Classifiers at the other
- * ends.
+ * The query subsettingContext() gives the context for subsetting a Property.
+ * 
+ * It consists, in the case of an attribute,
+ *  
+ * of the corresponding Classifier,
+ * 
+ * and in the case of an association end,
+ * 
+ * all of the Classifiers at the other ends.
  * 
  * body: if association <> null
  * then association.memberEnd->excluding(self)->collect(type)->asSet()

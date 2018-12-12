@@ -1,3 +1,4 @@
+#include "constraint.h"
 /**~value~
  * A_specification_intervalConstraint [Association]
  * 

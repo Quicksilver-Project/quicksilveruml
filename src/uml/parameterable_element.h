@@ -1,3 +1,4 @@
+#include "element.h"
 /**~common structure~
  * A_ownedParameteredElement_owningTemplateParameter [Association]
  * 
@@ -8,7 +9,6 @@
  * Member Ends
  * 
  *  TemplateParameter::ownedParameteredElement
- * 
  *  ParameterableElement::owningTemplateParameter
 **/
 /**
@@ -21,6 +21,5 @@
  * Member Ends
  * 
  *  TemplateParameter::parameteredElement
- * 
  *  ParameterableElement::templateParameter
 **/

@@ -24,10 +24,12 @@
  *  integerValue() : Integer {redefines ValueSpecification::integerValue()}
  * 
  * The query integerValue() gives the value.
+ * 
  * body: value
  * 
  *  isComputable() : Boolean {redefines ValueSpecification::isComputable()}
  * 
  * The query isComputable() is redefined to be true.
+ * 
  * body: true
 **/

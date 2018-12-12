@@ -44,5 +44,6 @@
  *  not_contained
  * 
  * An Interaction instance must not be contained within another Interaction instance.
+ * 
  * inv: enclosingInteraction->isEmpty()
 **/

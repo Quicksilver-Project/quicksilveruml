@@ -3,7 +3,11 @@
  * 
  * Description
  * 
- * For showing text about Slots, InstanceSpecifications, InstanceValues, or elements with a type, such as TypedElements
+ * For showing text about Slots,
+ * InstanceSpecifications,
+ * InstanceValues,
+ * or elements with a type,
+ * such as TypedElements
  * or Connectors.
  * 
  * Generalizations
@@ -20,7 +24,9 @@
  * 
  *  modelElement_type
  * 
- * modelElement must be a Slot, InstanceSpecification, InstanceValue, or an element with a type, such as a
+ * modelElement must be a Slot,
+ * InstanceSpecification, InstanceValue,
+ * or an element with a type, such as a
  * TypedElement or Connector.
  * 
  * Cannot be expressed in OCL 

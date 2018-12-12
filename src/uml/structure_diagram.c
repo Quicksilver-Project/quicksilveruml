@@ -3,7 +3,8 @@
  * 
  * Description
  * 
- * The most general class for UMLDiagrams depicting structural elements.
+ * The most general class for UMLDiagrams
+ * depicting structural elements.
  * 
  * Generalizations
  * 
@@ -11,6 +12,7 @@
  * 
  * Specializations
  * 
- * UMLClassDiagram, UMLComponentDiagram, UMLCompositeStructureDiagram, UMLDeploymentDiagram,
+ * UMLClassDiagram, UMLComponentDiagram,
+ * UMLCompositeStructureDiagram, UMLDeploymentDiagram,
  * UMLObjectDiagram, UMLPackageDiagram, UMLProfileDiagram
 **/

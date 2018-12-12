@@ -24,10 +24,12 @@
  *  isComputable() : Boolean {redefines ValueSpecification::isComputable()}
  * 
  * The query isComputable() is redefined to be true.
+ * 
  * body: true
  * 
  *  realValue() : Real {redefines ValueSpecification::realValue()}
  * 
  * The query realValue() gives the value.
+ * 
  * body: value
 **/

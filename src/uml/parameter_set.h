@@ -1,3 +1,4 @@
+#include "named_element.h"
 /**~classification~
  * A_condition_parameterSet [Association]
  * 
@@ -19,7 +20,6 @@
  * Member Ends
  * 
  *  Parameter::parameterSet
- * 
  *  ParameterSet::parameter
 **/
 /**
@@ -32,7 +32,6 @@
  * Member Ends
  * 
  *  Parameter::parameterSet
- * 
  *  ParameterSet::parameter
 **/
 /**

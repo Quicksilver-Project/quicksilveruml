@@ -1,3 +1,5 @@
+#include "connectable_element.h"
+#include "multiplicity_element.h"
 /**~activity~ 
  * A_variable_activityScope [Association]
  * 
@@ -31,5 +33,6 @@
  * 
  * Owned Ends
  * 
- *  variableAction : VariableAction [0..*] (opposite VariableAction::variable)
+ *  variableAction : VariableAction [0..*]
+ * (opposite VariableAction::variable)
 **/

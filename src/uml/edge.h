@@ -1,3 +1,5 @@
+#include "diagram.h"
+
 /**~UML Diagram Interchange~
  * A_UMLEdge_source_sourceEdge [Association]
  * 

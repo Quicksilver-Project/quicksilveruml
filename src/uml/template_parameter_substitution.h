@@ -1,3 +1,4 @@
+#include "element.h"
 /**~common structure~
  * A_actual_templateParameterSubstitution [Association]
  * 
@@ -11,7 +12,9 @@
  * 
  * Owned Ends
  * 
- *  templateParameterSubstitution : TemplateParameterSubstitution [0..*] (opposite
+ *  templateParameterSubstitution : 
+ * TemplateParameterSubstitution [0..*]
+ * (opposite
  * TemplateParameterSubstitution::actual)
 **/
 /**
@@ -23,7 +26,9 @@
  * 
  * Owned Ends
  * 
- *  templateParameterSubstitution : TemplateParameterSubstitution [0..*] (opposite
+ *  templateParameterSubstitution : 
+ * TemplateParameterSubstitution [0..*]
+ * (opposite
  * TemplateParameterSubstitution::formal)
 **/
 /**
@@ -39,8 +44,11 @@
  * 
  * Owned Ends
  * 
- *  owningTemplateParameterSubstitution : TemplateParameterSubstitution [0..1]{subsets Element::owner,
- * redefines A_actual_templateParameterSubstitution::templateParameterSubstitution} (opposite
+ *  owningTemplateParameterSubstitution :
+ * TemplateParameterSubstitution [0..1]
+ * {subsets Element::owner,
+ * redefines A_actual_templateParameterSubstitution
+ * ::templateParameterSubstitution} (opposite
  * TemplateParameterSubstitution::ownedActual)
 **/
 /**
@@ -53,6 +61,5 @@
  * Member Ends
  * 
  *  TemplateBinding::parameterSubstitution
- * 
  *  TemplateParameterSubstitution::templateBinding
 **/

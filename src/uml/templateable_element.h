@@ -1,3 +1,4 @@
+#include "element.h"
 /**~common structure~
  * A_ownedTemplateSignature_template [Association]
  * 
@@ -8,7 +9,6 @@
  * Member Ends
  * 
  *  TemplateableElement::ownedTemplateSignature
- * 
  *  TemplateSignature::template
 **/
 /**
@@ -21,6 +21,5 @@
  * Member Ends
  * 
  *  TemplateableElement::templateBinding
- * 
  *  TemplateBinding::boundElement
 **/

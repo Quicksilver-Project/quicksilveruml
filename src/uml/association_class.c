@@ -20,11 +20,13 @@
  *  cannot_be_defined
  * 
  * An AssociationClass cannot be defined between itself and something else.
+ * 
  * inv: self.endType()->excludes(self) and self.endType()->collect(et|
  * et.oclAsType(Classifier).allParents())->flatten()->excludes(self)
  * 
  *  disjoint_attributes_ends
  * 
  * The owned attributes and owned ends of an AssociationClass are disjoint.
+ * 
  * inv: ownedAttribute->intersection(ownedEnd)->isEmpty()
 **/

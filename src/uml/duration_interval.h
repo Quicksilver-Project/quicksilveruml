@@ -1,3 +1,5 @@
+#include "interval.h"
+
 /**~value~
  * A_max_durationInterval [Association]
  * 

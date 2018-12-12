@@ -32,10 +32,13 @@
  * 
  * The guard must contain only references to values local to the Lifeline on which it resides, or values global to
  * the whole Interaction.
+ * 
  * Cannot be expressed in OCL
  * 
  *  guard_directly_prior
+ * 
  * The guard must be placed directly prior to (above) the OccurrenceSpecification that will become the first
  * OccurrenceSpecification within this InteractionOperand.
+ * 
  * Cannot be expressed in OCL
 **/

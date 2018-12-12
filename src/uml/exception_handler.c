@@ -48,6 +48,7 @@
  * 
  * If the protectedNode is an Action with OutputPins, then the handlerBody must also be an Action with the same
  * number of OutputPins, which are compatible in type, ordering, and multiplicity to those of the protectedNode.
+ * 
  * inv: (protectedNode.oclIsKindOf(Action) and protectedNode.oclAsType(Action).output-
  * >notEmpty()) implies
  * (
@@ -64,6 +65,7 @@
  *  one_input
  * 
  * The handlerBody is an Action with one InputPin, and that InputPin is the same as the exceptionInput.
+ * 
  * inv: handlerBody.oclIsKindOf(Action) and
  * let inputs: OrderedSet(InputPin) = handlerBody.oclAsType(Action).input in
  * inputs->size()=1 and inputs->first()=exceptionInput
@@ -72,6 +74,7 @@
  * 
  * An ActivityEdge that has a source within the handlerBody of an ExceptionHandler must have its target in the
  * handlerBody also, and vice versa.
+ * 
  * inv: let nodes:Set(ActivityNode) = handlerBody.oclAsType(Action).allOwnedNodes() in
  * nodes.outgoing->forAll(nodes->includes(target)) and
  * nodes.incoming->forAll(nodes->includes(source))
@@ -79,11 +82,13 @@
  *  handler_body_owner
  * 
  * The handlerBody must have the same owner as the protectedNode.
+ * 
  * inv: handlerBody.owner=protectedNode.owner
  * 
  *  exception_input_type
  * 
  * The exceptionInput must either have no type or every exceptionType must conform to the exceptionInput type.
+ * 
  * inv: exceptionInput.type=null or
  * exceptionType->forAll(conformsTo(exceptionInput.type.oclAsType(Classifier)))
 **/

@@ -34,12 +34,14 @@
  *  one_outgoing_edge
  * 
  * A JoinNode has one outgoing ActivityEdge.
+ * 
  * inv: outgoing->size() = 1
  * 
  *  incoming_object_flow
  * 
  * If one of the incoming ActivityEdges of a JoinNode is an ObjectFlow, then its outgoing ActivityEdge must be
  * an ObjectFlow. Otherwise its outgoing ActivityEdge must be a ControlFlow.
+ * 
  * inv: if incoming->exists(oclIsKindOf(ObjectFlow)) then outgoing-
  * >forAll(oclIsKindOf(ObjectFlow))
  * else outgoing->forAll(oclIsKindOf(ControlFlow))

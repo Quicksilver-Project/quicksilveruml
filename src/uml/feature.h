@@ -1,3 +1,5 @@
+#include "redefinable_element.h"
+
 /**~classification~
  * A_feature_featuringClassifier [Association]
  * 

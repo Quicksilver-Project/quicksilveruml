@@ -22,11 +22,13 @@
  * Operations
  * 
  *  booleanValue() : Boolean {redefines ValueSpecification::booleanValue()}
+ * 
  * The query booleanValue() gives the value.
  * 
  * body: value
  * 
  *  isComputable() : Boolean {redefines ValueSpecification::isComputable()}
+ * 
  * The query isComputable() is redefined to be true.
  * 
  * body: true

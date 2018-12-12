@@ -55,6 +55,7 @@
  * A selection Behavior has one input Parameter and one output Parameter. The input Parameter must have the
  * same type as or a supertype of the type of ObjectNode, be non-unique, and have multiplicity 0..*. The output
  * Parameter must be the same or a subtype of the type of ObjectNode. The Behavior cannot have side effects.
+ * 
  * inv: selection<>null implies
  * selection.inputParameters()->size()=1 and
  * selection.inputParameters()->forAll(p | not p.isUnique and p.is(0,*) and
@@ -65,11 +66,13 @@
  *  selection_behavior
  * 
  * If an ObjectNode has a selection Behavior, then the ordering of the object node is ordered, and vice versa.
+ * 
  * inv: (selection<>null) = (ordering=ObjectNodeOrderingKind::ordered)
  * 
  *  object_flow_edges
  * 
  * If isControlType=false, the ActivityEdges incoming to or outgoing from an ObjectNode must all be
  * ObjectFlows.
+ * 
  * inv: (not isControlType) implies incoming->union(outgoing)->forAll(oclIsKindOf(ObjectFlow))
 **/

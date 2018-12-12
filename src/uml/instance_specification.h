@@ -1,3 +1,7 @@
+#include "deployment_artifact.h"
+#include "deployment_target.h"
+#include "packageable_element.h"
+
 /**~classification~
  * A_classifier_instanceSpecification [Association]
  * 

@@ -29,5 +29,6 @@
  *  classifier() : Enumeration
  * 
  * Derivation of Enumeration::/classifier
+ * 
  * body: enumeration
 **/

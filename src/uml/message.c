@@ -57,6 +57,7 @@
  *  messageKind() : MessageKind
  * 
  * This query returns the MessageKind value for this Message.
+ * 
  * body: messageKind
  * 
  *  isDistinguishableFrom(n : NamedElement, ns : Namespace) : Boolean {redefines
@@ -64,6 +65,7 @@
  * 
  * The query isDistinguishableFrom() specifies that any two Messages may coexist in the same Namespace,
  * regardless of their names.
+ * 
  * body: true
  * 
  * Constraints
@@ -72,6 +74,7 @@
  * 
  * If the sendEvent and the receiveEvent of the same Message are on the same Lifeline, the sendEvent must be
  * ordered before the receiveEvent.
+ * 
  * inv: receiveEvent.oclIsKindOf(MessageOccurrenceSpecification)
  * implies
  * let f : Lifeline = sendEvent-
@@ -90,12 +93,14 @@
  * Arguments of a Message must only be: i) attributes of the sending lifeline, ii) constants, iii) symbolic values
  * (which are wildcard values representing any legal value), iv) explicit parameters of the enclosing Interaction,
  * v) attributes of the class owning the Interaction.
+ * 
  * Cannot be expressed in OCL
  * 
  *  cannot_cross_boundaries
  * 
  * Messages cannot cross boundaries of CombinedFragments or their operands. This is true if and only if both
  * MessageEnds are enclosed within the same InteractionFragment (i.e., an InteractionOperand or an Interaction).
+ * 
  * inv: sendEvent->notEmpty() and receiveEvent->notEmpty() implies
  * let sendEnclosingFrag : Set(InteractionFragment) =
  * sendEvent->asOrderedSet()->first().enclosingFragment()
@@ -109,6 +114,7 @@
  * In the case when the Message signature is a Signal, the arguments of the Message must correspond to the
  * attributes of the Signal. A Message Argument corresponds to a Signal Attribute if the Argument is of the same
  * Class or a specialization of that of the Attribute.
+ * 
  * inv: (messageSort = MessageSort::asynchSignal ) and signature.oclIsKindOf(Signal) implies
  * let signalAttributes : OrderedSet(Property) =
  * signature.oclAsType(Signal).inheritedMember()->
@@ -126,6 +132,7 @@
  * 
  * If the MessageEnds are both OccurrenceSpecifications, then the connector must go between the Parts
  * represented by the Lifelines of the two MessageEnds.
+ * 
  * Cannot be expressed in OCL
  * 
  *  signature_refer_to
@@ -133,6 +140,7 @@
  * The signature must either refer an Operation (in which case messageSort is either synchCall or asynchCall or
  * reply) or a Signal (in which case messageSort is asynchSignal). The name of the NamedElement referenced by
  * signature must be the same as that of the Message.
+ * 
  * inv: signature->notEmpty() implies
  * ((signature.oclIsKindOf(Operation) and
  * (messageSort = MessageSort::asynchCall or messageSort = MessageSort::synchCall or
@@ -145,6 +153,7 @@
  * In the case when a Message with messageSort synchCall or asynchCall has a non empty Operation signature,
  * the arguments of the Message must correspond to the in and inout parameters of the Operation. A Parameter
  * corresponds to an Argument if the Argument is of the same Class or a specialization of that of the Parameter.
+ * 
  * inv: (messageSort = MessageSort::asynchCall or messageSort = MessageSort::synchCall) and
  * signature.oclIsKindOf(Operation) implies
  * let requestParms : OrderedSet(Parameter) = signature.oclAsType(Operation).ownedParameter->
@@ -163,6 +172,7 @@
  * In the case when a Message with messageSort reply has a non empty Operation signature, the arguments of the
  * Message must correspond to the out, inout, and return parameters of the Operation. A Parameter corresponds to
  * an Argument if the Argument is of the same Class or a specialization of that of the Parameter.
+ * 
  * inv: (messageSort = MessageSort::reply) and signature.oclIsKindOf(Operation) implies
  * let replyParms : OrderedSet(Parameter) = signature.oclAsType(Operation).ownedParameter->
  * select(direction = ParameterDirectionKind::inout or direction = ParameterDirectionKind::out

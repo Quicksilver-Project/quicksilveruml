@@ -33,5 +33,6 @@
  *  must_have_name
  * 
  * An Actor must have a name.
+ * 
  * inv: name->notEmpty()
 **/

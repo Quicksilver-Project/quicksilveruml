@@ -3,15 +3,19 @@
  * 
  * Description
  * 
- * A StructuralFeature is a typed feature of a Classifier that specifies the structure of instances of the Classifier.
+ * A StructuralFeature is a typed feature of a Classifier
+ * that specifies the structure of instances of the Classifier.
  * 
  * Diagrams
  * 
- * Features, Properties, Instances, Structural Feature Actions
+ * Features, Properties,
+ * Instances,
+ * Structural Feature Actions
  * 
  * Generalizations
  * 
- * MultiplicityElement, TypedElement, Feature
+ * MultiplicityElement,
+ * TypedElement, Feature
  * 
  * Specializations
  * 
@@ -21,5 +25,6 @@
  * 
  *  isReadOnly : Boolean [1..1] = false
  * 
- * If isReadOnly is true, the StructuralFeature may not be written to after initialization.
+ * If isReadOnly is true, the StructuralFeature
+ * may not be written to after initialization.
 **/

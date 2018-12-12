@@ -85,6 +85,7 @@
  * 
  * The union of the ExecutableNodes in the test and body parts of all clauses must be the same as the subset of
  * nodes contained in the ConditionalNode (considered as a StructuredActivityNode) that are ExecutableNodes.
+ * 
  * inv: clause.test->union(clause._'body') = node-
  * >select(oclIsKindOf(ExecutableNode)).oclAsType(ExecutableNode)
  * 

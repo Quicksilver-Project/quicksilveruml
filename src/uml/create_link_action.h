@@ -1,3 +1,5 @@
+#include "write_link_action.h"
+
 /**~action~
  * A_endData_createLinkAction [Association]
  * 

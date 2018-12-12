@@ -1,3 +1,4 @@
+#include "interaction_fragment.h"
 /**~interaction~
  * A_before_toAfter [Association]
  * 

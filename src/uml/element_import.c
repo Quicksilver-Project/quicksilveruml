@@ -9,7 +9,9 @@
  * Diagrams
  * 
  * Namespaces, Profiles
+ * 
  * Generalizations
+ * 
  * DirectedRelationship
  * 
  * Attributes

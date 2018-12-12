@@ -44,5 +44,6 @@
  *  extension_points
  * 
  * The ExtensionPoints referenced by the Extend relationship must belong to the UseCase that is being extended.
+ * 
  * inv: extensionLocation->forAll (xp | extendedCase.extensionPoint->includes(xp))
 **/

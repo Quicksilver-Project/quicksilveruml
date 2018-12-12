@@ -1,3 +1,4 @@
+#include "action.h"
 /**~action~
  * A_result_valueSpecificationAction [Association]
  * 
@@ -7,7 +8,9 @@
  * 
  * Owned Ends
  * 
- *  valueSpecificationAction : ValueSpecificationAction [0..1]{subsets A_output_action::action} (opposite
+ *  valueSpecificationAction : ValueSpecificationAction 
+ * [0..1]{subsets A_output_action::action}
+ * (opposite
  * ValueSpecificationAction::result)
 **/
 /**
@@ -19,6 +22,8 @@
  * 
  * Owned Ends
  * 
- *  valueSpecificationAction : ValueSpecificationAction [0..1]{subsets Element::owner} (opposite
+ *  valueSpecificationAction : ValueSpecificationAction
+ * [0..1]{subsets Element::owner}
+ * (opposite
  * ValueSpecificationAction::value)
 **/

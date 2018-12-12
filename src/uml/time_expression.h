@@ -1,3 +1,4 @@
+#include "value_specification.h"
 /**~value~
  * A_observation_timeExpression [Association]
  * 
@@ -7,5 +8,6 @@
  * 
  * Owned Ends
  * 
- *  timeExpression : TimeExpression [0..1] (opposite TimeExpression::observation)
+ *  timeExpression : TimeExpression [0..1]
+ * (opposite TimeExpression::observation)
 **/

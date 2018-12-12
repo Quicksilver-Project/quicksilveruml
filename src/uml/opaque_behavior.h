@@ -1,3 +1,4 @@
+#include "behavior.h"
 /**~common behavior~
  * A_behavior_opaqueExpression [Association]
  * 

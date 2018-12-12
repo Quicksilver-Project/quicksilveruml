@@ -1,3 +1,4 @@
+#include "observation.h"
 /**~value~
  * A_event_timeObservation [Association]
  * 
@@ -7,5 +8,6 @@
  * 
  * Owned Ends
  * 
- *  timeObservation : TimeObservation [0..*] (opposite TimeObservation::event)
+ *  timeObservation : TimeObservation [0..*]
+ * (opposite TimeObservation::event)
 **/

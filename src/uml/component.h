@@ -1,3 +1,5 @@
+#include "class.h"
+
 /**~structured classifier~
  * A_required_component [Association]
  * 

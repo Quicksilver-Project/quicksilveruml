@@ -1,3 +1,6 @@
+#include "directed_relationship.h"
+#include "packageable_element.h"
+
 /**~information_flow~
  * A_conveyed_conveyingFlow [Association]
  * 

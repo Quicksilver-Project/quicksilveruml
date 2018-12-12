@@ -1,3 +1,4 @@
+#include "write_structural_feature_action.h"
 /**~action~
  * A_removeAt_removeStructuralFeatureValueAction [Association]
  * 
@@ -7,6 +8,8 @@
  * 
  * Owned Ends
  * 
- *  removeStructuralFeatureValueAction : RemoveStructuralFeatureValueAction [0..1]{subsets
- * A_input_action::action} (opposite RemoveStructuralFeatureValueAction::removeAt)
+ *  removeStructuralFeatureValueAction : 
+ * RemoveStructuralFeatureValueAction [0..1]
+ * {subsets A_input_action::action}
+ * (opposite RemoveStructuralFeatureValueAction::removeAt)
 **/

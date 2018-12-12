@@ -1,3 +1,5 @@
+#include "association.h"
+
 /**~package~
  * A_ownedEnd_extension [Association]
  * 

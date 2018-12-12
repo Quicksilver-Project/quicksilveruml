@@ -23,5 +23,6 @@
  * Constraints
  * 
  *  immutable
+ * 
  * inv: ownedAttribute->forAll(isReadOnly)
 **/

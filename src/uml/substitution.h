@@ -1,3 +1,4 @@
+#include "realization.h"
 /**~classification~
  * A_contract_substitution [Association]
  * 
@@ -7,7 +8,9 @@
  * 
  * Owned Ends
  * 
- *  substitution : Substitution [0..*]{subsets A_supplier_supplierDependency::supplierDependency} (opposite
+ *  substitution : Substitution [0..*]
+ * {subsets A_supplier_supplierDependency
+ * ::supplierDependency} (opposite
  * Substitution::contract)
 **/
 /**
@@ -20,7 +23,6 @@
  * Member Ends
  * 
  *  Classifier::substitution
- * 
  *  Substitution::substitutingClassifier
 **/
 /**
@@ -33,7 +35,6 @@
  * Member Ends
  * 
  *  Classifier::substitution
- * 
  *  Substitution::substitutingClassifier
 **/
 /**
@@ -45,6 +46,8 @@
  * 
  * Owned Ends
  * 
- *  substitution : Substitution [0..*]{subsets A_supplier_supplierDependency::supplierDependency} (opposite
+ *  substitution : Substitution [0..*]
+ * {subsets A_supplier_supplierDependency
+ * ::supplierDependency} (opposite
  * Substitution::contract)
 **/

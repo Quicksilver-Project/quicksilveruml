@@ -1,3 +1,6 @@
+#include "directed_relationship.h"
+#include "named_element.h"
+
 /**~use case~ 
  * A_extensionLocation_extension [Association]
  * 

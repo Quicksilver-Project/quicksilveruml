@@ -99,6 +99,7 @@
  * >union(packageImport.importedPackage->collect(p | p.visibleMembers()))->asSet())
  * 
  *  membersAreDistinguishable() : Boolean
+ * 
  * The Boolean query membersAreDistinguishable() determines whether all of the Namespace's members are
  * distinguishable within it.
  * 

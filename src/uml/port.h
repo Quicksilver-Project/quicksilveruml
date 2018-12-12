@@ -1,3 +1,4 @@
+#include "property.h"
 /**~structured classifier~
  * A_port_trigger [Association]
  * 

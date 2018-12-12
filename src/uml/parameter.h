@@ -1,3 +1,5 @@
+#include "connectable_element.h"
+#include "multiplicity_element.h"
 /**~classification~
  * A_defaultValue_owningParameter [Association]
  * 
@@ -30,7 +32,6 @@
  * Member Ends
  * 
  *  Operation::ownedParameter
- * 
  *  Parameter::operation
 **/
 /**
@@ -43,7 +44,6 @@
  * Member Ends
  * 
  *  Parameter::parameterSet
- * 
  *  ParameterSet::parameter
 **/
 /**
@@ -78,7 +78,6 @@
  * Member Ends
  * 
  *  Parameter::parameterSet
- * 
  *  ParameterSet::parameter
 **/
 /**
@@ -91,7 +90,6 @@
  * Member Ends
  * 
  *  Operation::ownedParameter
- * 
  *  Parameter::operation
 **/
 /**

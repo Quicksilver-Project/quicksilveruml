@@ -13,15 +13,22 @@
  * 
  * Association Ends
  * 
- *  modelElement : State [1..*]{redefines UMLDiagramElement::modelElement} (opposite
- * A_UMLStateShape_modelElement_umlDiagramElement::umlDiagramElement)
+ *  modelElement : State [1..*]
+ * {redefines UMLDiagramElement::modelElement}
+ * (opposite
+ * A_UMLStateShape_modelElement_umlDiagramElement
+ * ::umlDiagramElement)
  * 
  * Constraints
  * 
  *  state_list
  * 
- * UMLStateShapes may have multiple modelElements only when their outgoing Transitions have no triggers or
- * effects, and target the same junction State that has one outgoing Transition.
+ * UMLStateShapes may have multiple modelElements
+ * only when their outgoing Transitions
+ * have no triggers or
+ * effects, and target the same
+ * junction State that has one
+ * outgoing Transition.
  * 
  * inv: (modelElement->size() > 1) implies
  * ( modelElement->forAll(outgoing->forAll(trigger->isEmpty() and

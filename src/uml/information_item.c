@@ -34,6 +34,7 @@
  * The sources and targets of an information item (its related information flows) must designate subsets of the
  * sources and targets of the representation information item, if any. The Classifiers that can realize an
  * information item can only be of the following kind: Class, Interface, InformationItem, Signal, Component.
+ * 
  * inv: (self.represented->select(oclIsKindOf(InformationItem))->forAll(p |
  * p.conveyingFlow.source->forAll(q | self.conveyingFlow.source->includes(q)) and
  * p.conveyingFlow.target->forAll(q | self.conveyingFlow.target->includes(q)))) and
@@ -43,11 +44,13 @@
  *  has_no
  * 
  * An informationItem has no feature, no generalization, and no associations.
+ * 
  * inv: self.generalization->isEmpty() and self.feature->isEmpty()
  * 
  *  not_instantiable
  * 
  * It is not instantiable.
+ * 
  * inv: isAbstract
 **/
 

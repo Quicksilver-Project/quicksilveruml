@@ -23,6 +23,7 @@
  * 
  *  ♦ actualGate : Gate [0..*]{subsets Element::ownedElement} (opposite
  * A_actualGate_interactionUse::interactionUse)
+ * 
  * The actual gates of the InteractionUse.
  * 
  *  ♦ argument : ValueSpecification [0..*]{ordered, subsets Element::ownedElement} (opposite
@@ -49,6 +50,7 @@
  * 
  * Actual Gates of the InteractionUse must match Formal Gates of the referred Interaction. Gates match when
  * their names are equal and their messages correspond.
+ * 
  * inv: actualGate->notEmpty() implies
  * refersTo.formalGate->forAll( fg : Gate | self.actualGate->select(matches(fg))->size()=1) and
  * self.actualGate->forAll(ag : Gate | refersTo.formalGate->select(matches(ag))->size()=1)
@@ -57,12 +59,14 @@
  * 
  * The arguments must only be constants, parameters of the enclosing Interaction or attributes of the classifier
  * owning the enclosing Interaction.
+ * 
  * Cannot be expressed in OCL
  * 
  *  returnValueRecipient_coverage
  * 
  * The returnValueRecipient must be a Property of a ConnectableElement that is represented by a Lifeline
  * covered by this InteractionUse.
+ * 
  * inv: returnValueRecipient->asSet()->notEmpty() implies
  * let covCE : Set(ConnectableElement) = covered.represents->asSet() in
  * covCE->notEmpty() and let classes:Set(Classifier) =
@@ -74,11 +78,13 @@
  *  arguments_correspond_to_parameters
  * 
  * The arguments of the InteractionUse must correspond to parameters of the referred Interaction.
+ * 
  * Cannot be expressed in OCL
  * 
  *  returnValue_type_recipient_correspondence
  * 
  * The type of the returnValue must correspond to the type of the returnValueRecipient.
+ * 
  * inv: returnValue.type->asSequence()->notEmpty() implies returnValue.type->asSequence()-
  * >first() = returnValueRecipient.type->asSequence()->first()
  * 
@@ -87,6 +93,7 @@
  * The InteractionUse must cover all Lifelines of the enclosing Interaction that are common with the lifelines
  * covered by the referred Interaction. Lifelines are common if they have the same selector and represents
  * associationEnd values.
+ * 
  * inv: let parentInteraction : Set(Interaction) = enclosingInteraction->asSet()->
  * union(enclosingOperand.combinedFragment->closure(enclosingOperand.combinedFragment)->
  * collect(enclosingInteraction).oclAsType(Interaction)->asSet()) in

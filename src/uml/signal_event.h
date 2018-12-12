@@ -1,3 +1,4 @@
+#include "message_event.h"
 /**~common behavior~
  * A_signal_signalEvent [Association]
  * 

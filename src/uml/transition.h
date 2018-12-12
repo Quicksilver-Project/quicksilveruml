@@ -1,3 +1,5 @@
+#include "namespace.h"
+#include "redefinable_element.h"
 /**~state machine~
  * A_effect_transition [Association]
  * 
@@ -7,7 +9,9 @@
  * 
  * Owned Ends
  * 
- *  transition : Transition [0..1]{subsets Element::owner} (opposite Transition::effect)
+ *  transition : Transition [0..1]
+ * {subsets Element::owner}
+ * (opposite Transition::effect)
 **/
 /**
  * A_guard_transition [Association]
@@ -22,7 +26,9 @@
  * 
  * Owned Ends
  * 
- *  transition : Transition [0..1]{subsets Constraint::context} (opposite Transition::guard)
+ *  transition : Transition [0..1]
+ * {subsets Constraint::context}
+ * (opposite Transition::guard)
 **/
 /**
  * A_incoming_target_vertex [Association]
@@ -34,7 +40,6 @@
  * Member Ends
  * 
  *  Vertex::incoming
- * 
  *  Transition::target
 **/
 /**
@@ -47,7 +52,6 @@
  * Member Ends
  * 
  *  Vertex::outgoing
- * 
  *  Transition::source
 **/
 /**
@@ -59,8 +63,11 @@
  * 
  * Owned Ends
  * 
- *  transition : Transition [0..*]{subsets A_redefinedElement_redefinableElement::redefinableElement} (opposite
+ *  transition : Transition [0..*]
+ * {subsets A_redefinedElement_redefinableElement
+ * ::redefinableElement} (opposite
  * Transition::redefinedTransition)
+ * 
  * UMLR-685: StateMachine Vertex needs to be made a kind of RedefinableElement instead of State
 **/
 /**
@@ -76,9 +83,14 @@
  * 
  * Owned Ends
  * 
- *  transition : Transition [0..*]{subsets A_redefinitionContext_redefinableElement::redefinableElement}
+ *  transition : Transition [0..*]
+ * {subsets A_redefinitionContext_redefinableElement
+ * ::redefinableElement}
  * (opposite Transition::redefinitionContext)
- * UMLR-685: StateMachine Vertex needs to be made a kind of RedefinableElement instead of State
+ * 
+ * UMLR-685: StateMachine Vertex needs to be
+ * made a kind of RedefinableElement
+ * instead of State
 **/
 /**
  * A_transition_container [Association]
@@ -90,7 +102,6 @@
  * Member Ends
  * 
  *  Region::transition
- * 
  *  Transition::container
 **/
 /**
@@ -102,5 +113,7 @@
  * 
  * Owned Ends
  * 
- *  transition : Transition [0..1]{subsets Element::owner} (opposite Transition::trigger)
+ *  transition : Transition [0..1]
+ * {subsets Element::owner}
+ * (opposite Transition::trigger)
 **/

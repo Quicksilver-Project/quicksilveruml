@@ -1,3 +1,5 @@
+#include "value_specification.h"
+
 /**~value~
  * A_expr_duration [Association]
  * 

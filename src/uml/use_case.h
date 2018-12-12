@@ -1,3 +1,4 @@
+#include "behaviored_classifier.h"
 /**~use case~
  * A_subject_useCase [Association]
  * 

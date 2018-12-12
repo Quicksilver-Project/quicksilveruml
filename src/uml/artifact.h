@@ -1,3 +1,6 @@
+#include "classifier.h"
+#include "deployment_artifact.h"
+
 /**~deployment~ 
  * A_manifestation_artifact [Association]
  * 

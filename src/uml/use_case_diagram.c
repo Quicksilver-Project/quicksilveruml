@@ -7,7 +7,8 @@
  * 
  * Generalizations
  * 
- * UMLBehaviorDiagram, UMLDiagramWithAssociations
+ * UMLBehaviorDiagram,
+ * UMLDiagramWithAssociations
  * 
  * Constraints
  * 

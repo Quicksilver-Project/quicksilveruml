@@ -1,3 +1,4 @@
+#include "state_machine.h"
 /**~state machine~
  * A_postCondition_owningTransition [Association]
  * 

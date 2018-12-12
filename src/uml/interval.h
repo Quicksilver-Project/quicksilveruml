@@ -1,3 +1,4 @@
+#include "value_specification.h"
 /**~value~
  * A_max_interval [Association]
  * 

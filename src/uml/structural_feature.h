@@ -1,3 +1,4 @@
+#include "typed_element.h"
 /**~classification~
  * A_structuralFeature_structuralFeatureAction [Association]
  * 
@@ -7,5 +8,6 @@
  * 
  * Owned Ends
  * 
- *  structuralFeatureAction : StructuralFeatureAction [0..*] (opposite StructuralFeatureAction::structuralFeature)
+ *  structuralFeatureAction : StructuralFeatureAction [0..*]
+ * (opposite StructuralFeatureAction::structuralFeature)
 **/

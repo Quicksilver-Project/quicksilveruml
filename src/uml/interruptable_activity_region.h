@@ -1,3 +1,4 @@
+#include "activity_group.h"
 /**~activity~ 
  * A_inInterruptibleRegion_node [Association]
  * 

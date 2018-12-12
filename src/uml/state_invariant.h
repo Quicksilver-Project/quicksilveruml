@@ -1,3 +1,4 @@
+#include "interaction_fragment.h"
 /**~interaction~
  * A_covered_stateInvariant [Association]
  * 
@@ -17,6 +18,7 @@
  * Interactions
  * 
  * Owned Ends
+ * 
  *  stateInvariant : StateInvariant [0..1]{subsets Element::owner} (opposite StateInvariant::invariant)
 **/
 /**

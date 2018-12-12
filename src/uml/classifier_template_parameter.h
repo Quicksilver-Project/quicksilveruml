@@ -1,3 +1,5 @@
+#include "template_parameter.h"
+
 /**~classification~
  * A_classifier_templateParameter_parameteredElement [Association]
  * 

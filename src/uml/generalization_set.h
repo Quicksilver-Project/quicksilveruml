@@ -1,3 +1,5 @@
+#include "packageable_element.h"
+
 /**~classification~
  * A_powertypeExtent_powertype [Association]
  * 
@@ -8,7 +10,6 @@
  * Member Ends
  * 
  *  Classifier::powertypeExtent
- * 
  *  GeneralizationSet::powertype
 **/
 /**
@@ -21,7 +22,6 @@
  * Member Ends
  * 
  *  Classifier::powertypeExtent
- * 
  *  GeneralizationSet::powertype
 **/
 /**
@@ -34,6 +34,5 @@
  * Member Ends
  * 
  *  Generalization::generalizationSet
- * 
  *  GeneralizationSet::generalization
 **/

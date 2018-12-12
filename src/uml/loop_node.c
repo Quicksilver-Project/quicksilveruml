@@ -18,7 +18,6 @@
  *  isTestedFirst : Boolean [1..1] = false
  * 
  * If true, the test is performed before the first execution of the bodyPart. If false, the bodyPart is executed once
- * 
  * before the test is performed.
  * 
  * Association Ends
@@ -41,6 +40,7 @@
  * 
  *  ♦ loopVariable : OutputPin [0..*]{ordered, subsets Element::ownedElement} (opposite
  * A_loopVariable_loopNode::loopNode)
+ * 
  * A list of OutputPins that hold the values of the loop variables during an execution of the loop. When the test
  * fails, the values are moved to the result OutputPins of the loop.
  * 

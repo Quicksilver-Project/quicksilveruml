@@ -1,3 +1,5 @@
+#include "redefinable_element.h"
+
 /**~use case~ 
  * A_extensionPoint_useCase [Association]
  * 

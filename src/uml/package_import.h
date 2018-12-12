@@ -1,3 +1,4 @@
+#include "directed_relationship.h"
 /**~common structure~
  * A_importedPackage_packageImport [Association]
  * 
@@ -20,6 +21,5 @@
  * Member Ends
  * 
  *  Namespace::packageImport
- * 
  *  PackageImport::importingNamespace
 **/

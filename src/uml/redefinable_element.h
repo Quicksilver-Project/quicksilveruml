@@ -1,3 +1,4 @@
+#include "named_element.h"
 /**~classification~
  * A_redefinedClassifier_classifier [Association]
  * 

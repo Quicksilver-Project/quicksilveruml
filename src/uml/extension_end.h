@@ -1,3 +1,5 @@
+#include "property.h"
+
 /**~package~
  * A_type_extensionEnd [Association]
  * 

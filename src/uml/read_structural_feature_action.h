@@ -1,3 +1,4 @@
+#include "structural_feature_action.h"
 /**~action~
  * A_result_readStructuralFeatureAction [Association]
  * 

@@ -1,3 +1,5 @@
+#include "directed_relationship.h"
+
 /**~classification~
  * A_general_generalization [Association]
  * 

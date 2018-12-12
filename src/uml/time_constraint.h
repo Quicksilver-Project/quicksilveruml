@@ -1,3 +1,4 @@
+#include "interval_constraint.h"
 /**~value~
  * A_specification_timeConstraint [Association]
  * 
@@ -11,6 +12,8 @@
  * 
  * Owned Ends
  * 
- *  timeConstraint : TimeConstraint [0..1]{redefines A_specification_intervalConstraint::intervalConstraint}
+ *  timeConstraint : TimeConstraint [0..1]
+ * {redefines A_specification_intervalConstraint
+ * ::intervalConstraint}
  * (opposite TimeConstraint::specification)
 **/

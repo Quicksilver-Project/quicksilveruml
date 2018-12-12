@@ -1,3 +1,4 @@
+#include "classifier.h"
 /**~simple classifier~
  * A_redefinedInterface_interface [Association]
  * 
@@ -18,6 +19,7 @@
  * Interfaces
  * 
  * Owned Ends
+ * 
  *  interface : Interface [0..1]{subsets NamedElement::namespace} (opposite Interface::protocol)
  * 
  * Specifies the namespace in which the protocol state machine is defined.
@@ -44,7 +46,6 @@
  * Member Ends
  * 
  *  Interface::ownedOperation
- * 
  *  Operation::interface
 **/
 /**
@@ -57,7 +58,6 @@
  * Member Ends
  * 
  *  Interface::ownedAttribute
- * 
  *  Property::interface
 **/
 /**

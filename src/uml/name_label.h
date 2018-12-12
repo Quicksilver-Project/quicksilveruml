@@ -1,3 +1,4 @@
+#include "label.h"
 /**~UML Diagram Interchange~
  * A_UMLNameLabel_modelElement_umlDiagramElement [Association]
  * 

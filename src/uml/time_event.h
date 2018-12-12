@@ -1,3 +1,4 @@
+#include "event.h"
 /**~common behavior~
  * A_when_timeEvent [Association]
  * 
@@ -7,5 +8,7 @@
  * 
  * Owned Ends
  * 
- *  timeEvent : TimeEvent [0..1]{subsets Element::owner} (opposite TimeEvent::when)
+ *  timeEvent : TimeEvent [0..1]
+ * {subsets Element::owner}
+ * (opposite TimeEvent::when)
 **/

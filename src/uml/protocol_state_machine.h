@@ -1,3 +1,4 @@
+#include "state_machine.h"
 /**~state machine~
  * A_conformance_specificMachine [Association]
  * 
@@ -8,6 +9,5 @@
  * Member Ends
  * 
  *  ProtocolStateMachine::conformance
- * 
  *  ProtocolConformance::specificMachine
 **/

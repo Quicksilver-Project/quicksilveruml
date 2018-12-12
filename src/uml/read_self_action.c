@@ -3,7 +3,8 @@
  * 
  * Description
  * 
- * A ReadSelfAction is an Action that retrieves the context object of the Behavior execution within which the
+ * A ReadSelfAction is an Action that retrieves the 
+ * context object of the Behavior execution within which the
  * 
  * ReadSelfAction execution is taking place.
  * 
@@ -37,10 +38,12 @@
  * 
  *  not_static
  * 
- * If the ReadSelfAction is contained in a Behavior that is acting as a method, then the Operation of the method
+ * If the ReadSelfAction is contained in a 
+ * Behavior that is acting as a method, 
+ * then the Operation of the method
  * must not be static.
  * 
- * inv: let behavior: Behavior = self.containingBehavior() in\
+ * inv: let behavior: Behavior = self.containingBehavior() in
  * behavior.specification<>null implies not behavior.specification.isStatic
  * 
  *  type

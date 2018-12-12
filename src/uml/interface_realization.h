@@ -1,3 +1,5 @@
+#include "realization.h"
+
 /**~simple classifier~
  * A_interfaceRealization_implementingClassifier [Association]
  * 

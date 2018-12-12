@@ -1,3 +1,5 @@
+#include "create_link_action.h"
+
 /**~action~
  * A_result_createLinkObjectAction [Association]
  * 

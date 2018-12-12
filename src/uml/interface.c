@@ -54,5 +54,6 @@
  *  visibility
  * 
  * The visibility of all Features owned by an Interface must be public.
+ * 
  * inv: feature->forAll(visibility = VisibilityKind::public)
 **/

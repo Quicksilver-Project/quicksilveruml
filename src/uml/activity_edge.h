@@ -1,3 +1,5 @@
+#include "redefinable_element.h"
+
 /**~activity~
  * A_containedEdge_inGroup [Association]
  * 

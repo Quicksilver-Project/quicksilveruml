@@ -17,5 +17,6 @@
  * MessageEnd, OccurrenceSpecification
  * 
  * Specializations
+ * 
  * DestructionOccurrenceSpecification
 **/

@@ -17,5 +17,6 @@
  * unidirectional associations.
  * 
  *  never
+ * 
  * Never show navigability or non-navigability.
 **/

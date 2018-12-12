@@ -70,6 +70,7 @@
  * 
  * The query allApplicableStereotypes() returns all the directly or indirectly owned stereotypes, including
  * stereotypes contained in sub-profiles.
+ * 
  * body: let ownedPackages : Bag(Package) = ownedMember->select(oclIsKindOf(Package))-
  * >collect(oclAsType(Package)) in
  * ownedStereotype->union(ownedPackages.allApplicableStereotypes())->flatten()->asSet()
@@ -78,6 +79,7 @@
  * 
  * The query containingProfile() returns the closest profile directly or indirectly containing this package (or this
  * package itself, if it is a profile).
+ * 
  * body: if self.oclIsKindOf(Profile) then
  * self.oclAsType(Profile)
  * else
@@ -88,7 +90,9 @@
  * 
  * The query makesVisible() defines whether a Package makes an element visible outside itself. Elements with no
  * visibility and elements with public visibility are made visible.
+ * 
  * pre: member->includes(el)
+ * 
  * body: ownedMember->includes(el) or
  * (elementImport->select(ei|ei.importedElement = VisibilityKind::public)-
  * >collect(importedElement.oclAsType(NamedElement))->includes(el)) or
@@ -98,27 +102,32 @@
  *  mustBeOwned() : Boolean {redefines Element::mustBeOwned()}
  * 
  * The query mustBeOwned() indicates whether elements of this type must have an owner.
+ * 
  * body: false
  * 
  *  nestedPackage() : Package [0..*]
  * 
  * Derivation for Package::/nestedPackage
+ * 
  * body: packagedElement->select(oclIsKindOf(Package))->collect(oclAsType(Package))->asSet()
  * 
  *  ownedStereotype() : Stereotype [0..*]
  * 
  * Derivation for Package::/ownedStereotype
+ * 
  * body: packagedElement->select(oclIsKindOf(Stereotype))->collect(oclAsType(Stereotype))-
  * >asSet()
  * 
  *  ownedType() : Type [0..*]
  * 
  * Derivation for Package::/ownedType
+ * 
  * body: packagedElement->select(oclIsKindOf(Type))->collect(oclAsType(Type))->asSet()
  * 
  *  visibleMembers() : PackageableElement [0..*]
  * 
  * The query visibleMembers() defines which members of a Package can be accessed outside it.
+ * 
  * body: member->select( m | m.oclIsKindOf(PackageableElement) and self.makesVisible(m))-
  * >collect(oclAsType(PackageableElement))->asSet()
  * 
@@ -127,6 +136,7 @@
  *  elements_public_or_private
  * 
  * If an element that is owned by a package has visibility, it is public or private.
+ * 
  * inv: packagedElement->forAll(e | e.visibility<> null implies e.visibility =
  * VisibilityKind::public or e.visibility = VisibilityKind::private)
 **/

@@ -1,3 +1,5 @@
+#include "interaction_fragment.h"
+
 /**~interaction~
  * A_finish_executionSpecification [Association]
  * 

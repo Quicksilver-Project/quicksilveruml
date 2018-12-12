@@ -1,3 +1,4 @@
+#include "structural_feature_action.h"
 /**~action~
  * A_result_writeStructuralFeatureAction [Association]
  * 
@@ -7,7 +8,10 @@
  * 
  * Owned Ends
  * 
- *  writeStructuralFeatureAction : WriteStructuralFeatureAction [0..1]{subsets A_output_action::action} (opposite
+ *  writeStructuralFeatureAction : 
+ * WriteStructuralFeatureAction [0..1]
+ * {subsets A_output_action::action}
+ * (opposite
  * WriteStructuralFeatureAction::result)
 **/
 /**
@@ -19,6 +23,9 @@
  * 
  * Owned Ends
  * 
- *  writeStructuralFeatureAction : WriteStructuralFeatureAction [0..1]{subsets A_input_action::action} (opposite
+ *  writeStructuralFeatureAction : 
+ * WriteStructuralFeatureAction [0..1]
+ * {subsets A_input_action::action}
+ * (opposite
  * WriteStructuralFeatureAction::value)
 **/

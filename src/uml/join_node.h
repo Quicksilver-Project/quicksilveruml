@@ -1,3 +1,4 @@
+#include "control_node.h"
 /**~activity~ 
  * A_joinSpec_joinNode [Association]
  * 

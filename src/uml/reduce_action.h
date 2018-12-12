@@ -1,3 +1,4 @@
+#include "action.h"
 /**~action~
  * A_collection_reduceAction [Association]
  * 

@@ -31,5 +31,6 @@
  * 
  * An occurrence specification must not be ordered relative to itself through a series of general orderings. (In
  * other words, the transitive closure of the general orderings is irreflexive.)
+ * 
  * inv: after->closure(toAfter.after)->excludes(before)
 **/

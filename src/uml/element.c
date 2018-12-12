@@ -19,8 +19,8 @@
  * Association Ends
  * 
  *  ♦ ownedComment : Comment [0..*]{subsets Element::ownedElement} (opposite 
- * 
  * A_ownedComment_owningElement::owningElement)
+ * 
  * The Comments owned by this Element.
  * 
  *  ♦ /ownedElement : Element [0..*]{union} (opposite Element::owner)
@@ -36,12 +36,14 @@
  *  allOwnedElements() : Element [0..*]
  * 
  * The query allOwnedElements() gives all of the direct and indirect ownedElements of an Element.
+ * 
  * body: ownedElement->union(ownedElement->collect(e | e.allOwnedElements()))->asSet()
  * 
  *  mustBeOwned() : Boolean
  * 
  * The query mustBeOwned() indicates whether Elements of this type must have an owner. Subclasses of
  * Element that do not require an owner must override this operation.
+ * 
  * body: true
  * 
  * Constraints

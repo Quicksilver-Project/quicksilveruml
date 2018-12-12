@@ -1,3 +1,4 @@
+#include "call_action.h"
 /**~action~
  * A_object_startObjectBehaviorAction [Association]
  * 
@@ -7,6 +8,8 @@
  * 
  * Owned Ends
  * 
- *  startObjectBehaviorAction : StartObjectBehaviorAction [0..1]{subsets A_input_action::action} (opposite
+ *  startObjectBehaviorAction : StartObjectBehaviorAction
+ * [0..1]{subsets A_input_action::action}
+ * (opposite
  * StartObjectBehaviorAction::object)
 **/

@@ -1,3 +1,5 @@
+#include "artifact.h"
+
 /**~deployment~
  * A_configuration_deployment [Association]
  * 

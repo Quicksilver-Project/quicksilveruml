@@ -1,3 +1,5 @@
+#include "named_element.h"
+
 /**~deployment~ 
  * A_deployedElement_deploymentTarget [Association]
  * 

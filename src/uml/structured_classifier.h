@@ -1,3 +1,4 @@
+#include "classifier.h"
 /**~structured classifier~
  * A_ownedAttribute_structuredClassifier [Association]
  * 
@@ -11,8 +12,11 @@
  * 
  * Owned Ends
  * 
- *  structuredClassifier : StructuredClassifier [0..1]{subsets NamedElement::namespace, subsets
- * A_attribute_classifier::classifier, redefines A_role_structuredClassifier::structuredClassifier} (opposite
+ *  structuredClassifier : StructuredClassifier
+ * [0..1]{subsets NamedElement::namespace, subsets
+ * A_attribute_classifier::classifier,
+ * redefines A_role_structuredClassifier
+ * ::structuredClassifier} (opposite
  * StructuredClassifier::ownedAttribute)
 **/
 /**
@@ -24,8 +28,11 @@
  * 
  * Owned Ends
  * 
- *  structuredClassifier : StructuredClassifier [0..1]{subsets Feature::featuringClassifier, subsets
- * NamedElement::namespace, subsets RedefinableElement::redefinitionContext} (opposite
+ *  structuredClassifier : StructuredClassifier
+ * [0..1]{subsets Feature::featuringClassifier, subsets
+ * NamedElement::namespace,
+ * subsets RedefinableElement::redefinitionContext}
+ * (opposite
  * StructuredClassifier::ownedConnector)
 **/
 /**
@@ -37,7 +44,8 @@
  * 
  * Owned Ends
  * 
- *  structuredClassifier : StructuredClassifier [0..1] (opposite StructuredClassifier::part)
+ *  structuredClassifier : StructuredClassifier
+ * [0..1] (opposite StructuredClassifier::part)
 **/
 /**
  * A_role_structuredClassifier [Association]
@@ -52,6 +60,8 @@
  * 
  * Owned Ends
  * 
- *  /structuredClassifier : StructuredClassifier [0..*]{union, subsets
- * A_member_memberNamespace::memberNamespace} (opposite StructuredClassifier::role)
+ *  /structuredClassifier : StructuredClassifier
+ * [0..*]{union, subsets
+ * A_member_memberNamespace::memberNamespace}
+ * (opposite StructuredClassifier::role)
 **/

@@ -1,3 +1,5 @@
+#include "typed_element.h"
+#include "activity_node.h"
 /**~activity~ 
  * A_inState_objectNode [Association]
  * 

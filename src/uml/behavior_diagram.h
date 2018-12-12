@@ -1,3 +1,5 @@
+#include "diagram.h"
+
 /**~UML Diagram Interchange~
  * A_UMLBehaviorDiagram_modelElement_umlDiagramElement[Association]
  * 

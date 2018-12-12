@@ -1,3 +1,5 @@
+#include "occurrence_specification.h"
+
 /**~interaction~
  * A_execution_executionOccurrenceSpecification [Association]
  * 

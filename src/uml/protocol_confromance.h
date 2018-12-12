@@ -1,3 +1,4 @@
+#include "directed_relationship.h"
 /**~state machine~
  * A_conformance_specificMachine [Association]
  * 
@@ -8,7 +9,6 @@
  * Member Ends
  * 
  *  ProtocolStateMachine::conformance
- * 
  *  ProtocolConformance::specificMachine
 **/
 /**

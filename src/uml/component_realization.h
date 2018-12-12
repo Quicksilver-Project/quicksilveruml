@@ -1,3 +1,5 @@
+#include "realization.h"
+
 /**~structured classifier~
  * A_realizingClassifier_componentRealization [Association]
  * 

@@ -3,7 +3,9 @@
  * 
  * Description
  * 
- * The most general class for UML diagram elements that are not rendered as lines.
+ * The most general class for
+ * UML diagram elements that
+ * are not rendered as lines.
  * 
  * Generalizations
  * 
@@ -11,5 +13,6 @@
  * 
  * Specializations
  * 
- * UMLAssociationOrConnectorOrLinkShape, UMLCompartmentableShape, UMLLabel
+ * UMLAssociationOrConnectorOrLinkShape,
+ * UMLCompartmentableShape, UMLLabel
 **/

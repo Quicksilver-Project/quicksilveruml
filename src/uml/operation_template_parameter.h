@@ -1,3 +1,4 @@
+#include "template_parameter.h"
 /**~classification~
  * A_operation_templateParameter_parameteredElement [Association]
  * 
@@ -8,7 +9,6 @@
  * Member Ends
  * 
  *  Operation::templateParameter
- * 
  *  OperationTemplateParameter::parameteredElement
 **/
 /**
@@ -21,6 +21,5 @@
  * Member Ends
  * 
  *  Operation::templateParameter
- * 
  *  OperationTemplateParameter::parameteredElement
 **/

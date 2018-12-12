@@ -1,3 +1,5 @@
+#include "classifier.h"
+
 /**~simple classifier~
  * A_ownedOperation_datatype [Association]
  * 

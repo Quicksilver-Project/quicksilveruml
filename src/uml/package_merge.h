@@ -1,3 +1,4 @@
+#include "directed_relationship.h"
 /**~package~
  * A_mergedPackage_packageMerge [Association]
  * 
@@ -20,6 +21,5 @@
  * Member Ends
  * 
  *  Package::packageMerge
- * 
  *  PackageMerge::receivingPackage
 **/

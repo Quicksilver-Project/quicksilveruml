@@ -25,5 +25,6 @@
  *  must_have_name
  * 
  * An ExtensionPoint must have a name.
+ * 
  * inv: name->notEmpty ()
 **/

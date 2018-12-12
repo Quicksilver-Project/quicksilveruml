@@ -34,6 +34,7 @@
  *  same_lifeline
  * 
  * The startEvent and the finishEvent must be on the same Lifeline.
+ * 
  * inv: start.covered = finish.covered
 **/
 

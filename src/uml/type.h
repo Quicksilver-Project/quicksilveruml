@@ -1,3 +1,4 @@
+#include "packageable_element.h"
 /**~common structure~
  * A_ownedType_package [Association]
  * 
@@ -8,7 +9,6 @@
  * Member Ends
  * 
  *  Package::ownedType
- * 
  *  Type::package
 **/
 /**
@@ -20,7 +20,8 @@
  * 
  * Owned Ends
  * 
- *  typedElement : TypedElement [0..*] (opposite TypedElement::type)
+ *  typedElement : TypedElement [0..*]
+ * (opposite TypedElement::type)
 **/
 /**
  * A_type_operation [Association]
@@ -31,5 +32,6 @@
  * 
  * Owned Ends
  * 
- *  operation : Operation [0..*] (opposite Operation::type)
+ *  operation : Operation [0..*]
+ * (opposite Operation::type)
 **/

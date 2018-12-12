@@ -1,3 +1,5 @@
+#include "constraint.h"
+
 /**~interaction~
  * A_maxint_interactionConstraint [Association]
  * 

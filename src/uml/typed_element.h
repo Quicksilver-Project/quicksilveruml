@@ -1,3 +1,4 @@
+#include "named_element.h"
 /**~common structure~
  * A_type_extensionEnd [Association]
  * 
@@ -7,7 +8,9 @@
  * 
  * Owned Ends
  * 
- *  extensionEnd : ExtensionEnd [0..*]{subsets A_type_typedElement::typedElement} (opposite
+ *  extensionEnd : ExtensionEnd [0..*]
+ * {subsets A_type_typedElement
+ * ::typedElement} (opposite
  * ExtensionEnd::type)
 **/
 /**
@@ -19,5 +22,6 @@
  * 
  * Owned Ends
  * 
- *  typedElement : TypedElement [0..*] (opposite TypedElement::type)
+ *  typedElement : TypedElement [0..*]
+ * (opposite TypedElement::type)
 **/

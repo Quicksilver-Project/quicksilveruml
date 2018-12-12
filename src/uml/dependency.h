@@ -1,3 +1,6 @@
+#include "directed_relationship.h"
+#include "packageable_element.h"
+
 /**~common structure~
  * A_clientDependency_client [Association]
  * 

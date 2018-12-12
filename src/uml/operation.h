@@ -1,3 +1,6 @@
+#include "behavioral_feature.h"
+#include "parameterable_element.h"
+#include "templateable_element.h"
 /**~classification~
  * A_bodyCondition_bodyContext [Association]
  * 
@@ -19,7 +22,6 @@
  * Member Ends
  * 
  *  Operation::templateParameter
- * 
  *  OperationTemplateParameter::parameteredElement
 **/
 /**
@@ -32,7 +34,6 @@
  * Member Ends
  * 
  *  Operation::ownedParameter
- * 
  *  Parameter::operation
 **/
 /**
@@ -113,7 +114,6 @@
  * Member Ends
  * 
  *  Class::ownedOperation
- * 
  *  Operation::class
 **/
 /**
@@ -126,7 +126,6 @@
  * Member Ends
  * 
  *  Interface::ownedOperation
- * 
  *  Operation::interface
 **/
 /**
@@ -139,7 +138,6 @@
  * Member Ends
  * 
  *  DataType::ownedOperation
- * 
  *  Operation::datatype
 **/
 /**
@@ -209,7 +207,6 @@
  * Member Ends
  * 
  *  Operation::ownedParameter
- * 
  *  Parameter::operation
 **/
 /**
@@ -222,7 +219,6 @@
  * Member Ends
  * 
  *  Operation::templateParameter
- * 
  *  OperationTemplateParameter::parameteredElement
 **/
 /**

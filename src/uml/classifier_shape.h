@@ -1,3 +1,5 @@
+#include "compartmentable_shape.h"
+
 /**~UML Diagram Interchange~
  * A_UMLClassifierShape_modelElement_umlDiagramElement [Association]
  * 

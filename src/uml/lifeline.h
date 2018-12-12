@@ -1,3 +1,4 @@
+#include "named_element.h"
 /**~interaction~
  * A_covered_coveredBy [Association]
  * 

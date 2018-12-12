@@ -1,3 +1,4 @@
+#include "package.h"
 /**~package~
  * A_metaclassReference_profile [Association]
  * 
